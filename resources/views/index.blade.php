@@ -298,156 +298,6 @@
       </div>
     </section>
 
-    <!--
-  ###########
-  counter Section
-  ###########
--->
-    <section
-      class="counter"
-      data-aos="fade-up"
-      data-aos-once="true"
-      data-aos-duration="1000"
-    >
-      <div class="container">
-        <div class="row">
-          <!--==== Srart counter-up Section  =====-->
-          <div class="col-12">
-            <div class="counter--container d-flex">
-              <div class="counter--content">
-                <div class="counter--content-icon">
-                  <svg
-                    width="32"
-                    height="32"
-                    viewBox="0 0 32 32"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M16.0001 2.66675C13.363 2.66675 10.7851 3.44873 8.59248 4.91382C6.39983 6.37891 4.69086 8.46129 3.68169 10.8976C2.67253 13.334 2.40848 16.0149 2.92295 18.6013C3.43742 21.1877 4.7073 23.5635 6.572 25.4282C8.4367 27.2929 10.8125 28.5627 13.3989 29.0772C15.9853 29.5917 18.6662 29.3276 21.1025 28.3185C23.5389 27.3093 25.6213 25.6003 27.0863 23.4077C28.5514 21.215 29.3334 18.6372 29.3334 16.0001C29.3334 14.2491 28.9885 12.5153 28.3185 10.8976C27.6484 9.27996 26.6663 7.81011 25.4282 6.57199C24.1901 5.33388 22.7202 4.35175 21.1025 3.68169C19.4849 3.01162 17.751 2.66675 16.0001 2.66675ZM16.0001 26.6667C13.8904 26.6667 11.8281 26.0412 10.074 24.8691C8.31988 23.697 6.95271 22.0311 6.14537 20.082C5.33804 18.133 5.1268 15.9882 5.53838 13.9191C5.94995 11.85 6.96586 9.94937 8.45761 8.45761C9.94938 6.96585 11.85 5.94995 13.9191 5.53837C15.9883 5.1268 18.133 5.33803 20.082 6.14537C22.0311 6.9527 23.697 8.31987 24.8691 10.074C26.0412 11.8281 26.6668 13.8904 26.6668 16.0001C26.6668 18.8291 25.5429 21.5422 23.5426 23.5426C21.5422 25.5429 18.8291 26.6667 16.0001 26.6667Z"
-                      fill="#417086"
-                    />
-                    <path
-                      d="M16.0001 14.6667C13.3334 14.6667 13.3334 13.8267 13.3334 13.3333C13.3334 12.84 14.2667 12 16.0001 12C17.7334 12 17.8534 12.8533 17.8667 13.3333H20.5334C20.5154 12.425 20.1887 11.5499 19.6071 10.8519C19.0255 10.154 18.2236 9.67486 17.3334 9.49333V8H14.6667V9.45333C12.0001 9.89333 10.6667 11.6133 10.6667 13.3333C10.6667 14.8267 11.3601 17.3333 16.0001 17.3333C18.6667 17.3333 18.6667 18.24 18.6667 18.6667C18.6667 19.0933 17.8401 20 16.0001 20C13.5467 20 13.3334 18.8533 13.3334 18.6667H10.6667C10.6667 19.8933 11.5467 22.0667 14.6667 22.56V24H17.3334V22.56C20.0001 22.1067 21.3334 20.3867 21.3334 18.6667C21.3334 17.1733 20.6401 14.6667 16.0001 14.6667Z"
-                      fill="#417086"
-                    />
-                  </svg>
-                </div>
-                <div class="counter--content-percent">
-                  <h2>$<span class="counter--content-number">150</span>+</h2>
-                </div>
-                <p class="bold">
-                  Owned from <br />
-                  Properties transactions
-                </p>
-              </div>
-
-              <div class="counter--content">
-                <div class="counter--content-icon">
-                  <svg
-                    width="32"
-                    height="32"
-                    viewBox="0 0 32 32"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M16.0001 22.6667L17.3334 20.0001V13.1441C19.6281 12.5481 21.3334 10.4774 21.3334 8.00008C21.3334 5.05875 18.9414 2.66675 16.0001 2.66675C13.0587 2.66675 10.6667 5.05875 10.6667 8.00008C10.6667 10.4774 12.3721 12.5481 14.6667 13.1441V20.0001L16.0001 22.6667Z"
-                      fill="#417086"
-                    />
-                    <path
-                      d="M21.6894 14.0841L20.9787 16.6548C24.4334 17.6094 26.6667 19.4454 26.6667 21.3334C26.6667 23.8561 22.2867 26.6668 16.0001 26.6668C9.71341 26.6668 5.33341 23.8561 5.33341 21.3334C5.33341 19.4454 7.56675 17.6094 11.0227 16.6534L10.3121 14.0828C5.59608 15.3868 2.66675 18.1641 2.66675 21.3334C2.66675 25.8188 8.52408 29.3334 16.0001 29.3334C23.4761 29.3334 29.3334 25.8188 29.3334 21.3334C29.3334 18.1641 26.4041 15.3868 21.6894 14.0841Z"
-                      fill="#417086"
-                    />
-                  </svg>
-                </div>
-                <div class="counter--content-percent">
-                  <h2><span class="counter--content-number">25</span>K+</h2>
-                </div>
-                <p class="bold">
-                  Properties for Buy <br />
-                  & sell Successfully
-                </p>
-              </div>
-
-              <div class="counter--content">
-                <div class="counter--content-icon">
-                  <svg
-                    width="32"
-                    height="32"
-                    viewBox="0 0 32 32"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M21.425 17.5C21.2096 18.8613 20.5686 20.1195 19.5941 21.0941C18.6195 22.0686 17.3613 22.7096 16 22.925"
-                      stroke="#417086"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M9 8.17505C7.075 11.075 5.5 14.4001 5.5 17.5001C5.5 20.2848 6.60625 22.9555 8.57538 24.9247C10.5445 26.8938 13.2152 28.0001 16 28.0001C18.7848 28.0001 21.4555 26.8938 23.4246 24.9247C25.3938 22.9555 26.5 20.2848 26.5 17.5001C26.5 11 22 6.00005 18.35 2.36255L14 11.5L9 8.17505Z"
-                      stroke="#417086"
-                      stroke-width="3"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                </div>
-                <div class="counter--content-percent">
-                  <h2><span class="counter--content-number">500</span></h2>
-                </div>
-                <p class="bold">
-                  Daily completed <br />
-                  transactions
-                </p>
-              </div>
-
-              <div class="counter--content">
-                <div class="counter--content-icon">
-                  <svg
-                    width="32"
-                    height="32"
-                    viewBox="0 0 32 32"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M19.525 27.475C18.3822 27.8223 17.1944 27.9992 16 28C13.6266 28 11.3066 27.2962 9.33316 25.9776C7.35977 24.6591 5.8217 22.7849 4.91345 20.5922C4.0052 18.3995 3.76756 15.9867 4.23058 13.6589C4.6936 11.3312 5.83649 9.19295 7.51472 7.51472C9.19295 5.83649 11.3312 4.6936 13.6589 4.23058C15.9867 3.76756 18.3995 4.0052 20.5922 4.91345C22.7849 5.8217 24.6591 7.35977 25.9776 9.33316C27.2962 11.3066 28 13.6266 28 16C27.9992 17.1944 27.8223 18.3822 27.475 19.525L19.525 27.475Z"
-                      stroke="#417086"
-                      stroke-width="2.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M21.2 19C20.6714 19.9107 19.9128 20.6667 19.0003 21.1922C18.0877 21.7176 17.0531 21.9942 16 21.9942C14.947 21.9942 13.9124 21.7176 12.9998 21.1922C12.0873 20.6667 11.3287 19.9107 10.8 19"
-                      stroke="#417086"
-                      stroke-width="2.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M20.5 15C21.3284 15 22 14.3284 22 13.5C22 12.6716 21.3284 12 20.5 12C19.6716 12 19 12.6716 19 13.5C19 14.3284 19.6716 15 20.5 15Z"
-                      fill="#417086"
-                    />
-                    <path
-                      d="M11.5 15C12.3284 15 13 14.3284 13 13.5C13 12.6716 12.3284 12 11.5 12C10.6716 12 10 12.6716 10 13.5C10 14.3284 10.6716 15 11.5 15Z"
-                      fill="#417086"
-                    />
-                  </svg>
-                </div>
-                <div class="counter--content-percent">
-                  <h2>$<span class="counter--content-number">600</span>+</h2>
-                </div>
-                <p class="bold">Reagular Clients</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <!-- 
   #############
   Properties Section
@@ -474,24 +324,10 @@
                 <i class="ph-arrow-right"></i>
               </a>
             </div>
-            <div class="button-group filters-button-group properties-filter">
-              <button class="button is-checked" data-filter=".resident">
-                Resident Property
-              </button>
-              <button class="button" data-filter=".commercial">
-                Commercial Property
-              </button>
-              <button class="button" data-filter=".industrial">
-                Industrial Property
-              </button>
-              <button class="button" data-filter=".agriculture">
-                Agriculture Property
-              </button>
-            </div>
           </div>
         </div>
         <div class="grid row row-cols-xl-3 row-cols-md-2 g-4">
-          <div class="properties-card industrial commercial resident">
+          <div class="properties-card industrial">
             <div class="properties-card--thumb">
               <img src="images/properties/properties1.png" alt="properties1" />
             </div>
@@ -598,7 +434,7 @@
             </div>
           </div>
 
-          <div class="properties-card agriculture resident">
+          <div class="properties-card">
             <div class="properties-card--thumb">
               <img src="images/properties/properties2.png" alt="properties1" />
             </div>
@@ -705,7 +541,7 @@
             </div>
           </div>
 
-          <div class="properties-card industrial commercial resident">
+          <div class="properties-card industrial">
             <div class="properties-card--thumb">
               <img src="images/properties/properties3.png" alt="properties1" />
             </div>
@@ -812,7 +648,7 @@
             </div>
           </div>
 
-          <div class="properties-card agriculture commercial resident">
+          <div class="properties-card agriculture">
             <div class="properties-card--thumb">
               <img src="images/properties/properties4.png" alt="properties1" />
             </div>
@@ -919,7 +755,7 @@
             </div>
           </div>
 
-          <div class="properties-card industrial resident">
+          <div class="properties-card">
             <div class="properties-card--thumb">
               <img src="images/properties/properties5.png" alt="properties1" />
             </div>
@@ -1026,7 +862,7 @@
             </div>
           </div>
 
-          <div class="properties-card agriculture resident">
+          <div class="properties-card">
             <div class="properties-card--thumb">
               <img src="images/properties/properties6.png" alt="properties1" />
             </div>
@@ -1229,282 +1065,7 @@
       </div>
     </section>
 
-    <!-- 
-  #############
-  Testimonial Section
-  #############
--->
-    <section
-      class="testimonial"
-      data-aos="fade-up"
-      data-aos-once="true"
-      data-aos-duration="1000"
-    >
-      <div class="testimonial-shape-left">
-        <img
-          src="images/testimonial/testimonial-shape-1.png"
-          alt="testimonial-shape"
-        />
-      </div>
-      <div class="testimonial-shape-right-top">
-        <img
-          src="images/testimonial/testimonial-shape-2.png"
-          alt="testimonial-shape"
-        />
-      </div>
-      <div class="testimonial-shape-right-bottom"></div>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-11 offset-lg-1">
-            <div class="testimonial-slider">
-              <!--Testimonial Slider Items-->
-              <div class="testimonial-slider--item">
-                <div class="testimonial-slider--item--thumb">
-                  <img src="images/testimonial/client1.png" alt="client" />
-                </div>
-                <div class="testimonial-slider--item--content">
-                  <div
-                    class="testimonial-slider--item--header d-flex align-items-center justify-content-between"
-                  >
-                    <div class="testimonial-slider--item--author">
-                      <h4>Taylor Wilson</h4>
-                      <p>Quality Manager - Static Mania</p>
-                    </div>
-                    <svg
-                      width="71"
-                      height="53"
-                      viewBox="0 0 71 53"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M63.1002 45.1484C68.0656 40.3016 70.5 32.8932 70.5 23.0288C70.5 16.1032 68.9173 10.5945 65.692 6.56205L65.6921 6.56202L65.6877 6.5567C62.3665 2.51965 57.9712 0.50001 52.5486 0.50001C47.8662 0.50001 43.9762 2.01153 40.9198 5.05125L40.9198 5.05121L40.9145 5.05655C37.8712 8.17499 36.3424 11.9046 36.3424 16.2199C36.3424 20.6903 37.7213 24.503 40.4905 27.6271C43.1951 30.8699 46.9685 32.4738 51.7432 32.4738C54.171 32.4738 56.142 32.0035 57.5924 31.007C57.0019 33.771 55.739 36.1062 53.807 38.0277C51.2415 40.5791 47.5803 41.8874 42.749 41.8874C41.2557 41.8874 39.5337 41.7563 37.5808 41.4914L37.0136 41.4145L37.0136 41.9869L37.0136 51.5995L37.0136 52.0995L37.5136 52.0995C37.8358 52.0995 38.2992 52.14 38.9143 52.2272C39.4596 52.3173 40.0056 52.3637 40.552 52.3664C41.0048 52.454 41.4248 52.5 41.8093 52.5C50.9364 52.5 58.0582 50.0717 63.1002 45.1484ZM63.1002 45.1484L62.751 44.7906L63.1002 45.1484ZM29.8496 6.56205L29.8497 6.56202L29.8453 6.55669C26.5241 2.51964 22.1288 0.500007 16.7062 0.500007C12.0238 0.500006 8.1338 2.01153 5.07734 5.0512L5.07213 5.05654C2.02878 8.17499 0.499996 11.9046 0.499995 16.2199C0.499995 20.6903 1.87891 24.503 4.64807 27.6271C7.35271 30.8699 11.1261 32.4738 15.9008 32.4738C18.3286 32.4738 20.2995 32.0035 21.75 31.007C21.1595 33.771 19.8966 36.1062 17.9645 38.0277C15.3991 40.5791 11.7379 41.8874 6.90662 41.8874C5.41328 41.8874 3.69132 41.7563 1.7384 41.4914L1.1712 41.4145L1.1712 41.9869L1.1712 51.5995L1.1712 52.0995L1.6712 52.0995C1.99337 52.0995 2.45676 52.14 3.07186 52.2272C3.61721 52.3173 4.16318 52.3637 4.70956 52.3664C5.16239 52.454 5.58237 52.5 5.96693 52.5C15.094 52.5 22.2158 50.0717 27.2578 45.1484C32.2232 40.3016 34.6576 32.8932 34.6576 23.0288C34.6576 16.1032 33.0749 10.5945 29.8496 6.56205Z"
-                        stroke="#5D8A9E"
-                      />
-                    </svg>
-                  </div>
-                  <div class="testimonial-slider--item--details">
-                    <h5>
-                      Eget eu massa et consectetur. Mauris donec. Leo a, id sed
-                      duis proin sodales. Turpis viverra diam porttitor mattis
-                      morbi ac amet. Euismod commodo. We get you customer
-                      relationships that last.
-                    </h5>
-                  </div>
-                </div>
-              </div>
-              <!--Testimonial Slider Items-->
-              <div class="testimonial-slider--item">
-                <div class="testimonial-slider--item--thumb">
-                  <img src="images/testimonial/client2.png" alt="client" />
-                </div>
-                <div class="testimonial-slider--item--content">
-                  <div
-                    class="testimonial-slider--item--header d-flex align-items-center justify-content-between"
-                  >
-                    <div class="testimonial-slider--item--author">
-                      <h4>Willy Madison</h4>
-                      <p>Management - Static Mania</p>
-                    </div>
-                    <svg
-                      width="71"
-                      height="53"
-                      viewBox="0 0 71 53"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M63.1002 45.1484C68.0656 40.3016 70.5 32.8932 70.5 23.0288C70.5 16.1032 68.9173 10.5945 65.692 6.56205L65.6921 6.56202L65.6877 6.5567C62.3665 2.51965 57.9712 0.50001 52.5486 0.50001C47.8662 0.50001 43.9762 2.01153 40.9198 5.05125L40.9198 5.05121L40.9145 5.05655C37.8712 8.17499 36.3424 11.9046 36.3424 16.2199C36.3424 20.6903 37.7213 24.503 40.4905 27.6271C43.1951 30.8699 46.9685 32.4738 51.7432 32.4738C54.171 32.4738 56.142 32.0035 57.5924 31.007C57.0019 33.771 55.739 36.1062 53.807 38.0277C51.2415 40.5791 47.5803 41.8874 42.749 41.8874C41.2557 41.8874 39.5337 41.7563 37.5808 41.4914L37.0136 41.4145L37.0136 41.9869L37.0136 51.5995L37.0136 52.0995L37.5136 52.0995C37.8358 52.0995 38.2992 52.14 38.9143 52.2272C39.4596 52.3173 40.0056 52.3637 40.552 52.3664C41.0048 52.454 41.4248 52.5 41.8093 52.5C50.9364 52.5 58.0582 50.0717 63.1002 45.1484ZM63.1002 45.1484L62.751 44.7906L63.1002 45.1484ZM29.8496 6.56205L29.8497 6.56202L29.8453 6.55669C26.5241 2.51964 22.1288 0.500007 16.7062 0.500007C12.0238 0.500006 8.1338 2.01153 5.07734 5.0512L5.07213 5.05654C2.02878 8.17499 0.499996 11.9046 0.499995 16.2199C0.499995 20.6903 1.87891 24.503 4.64807 27.6271C7.35271 30.8699 11.1261 32.4738 15.9008 32.4738C18.3286 32.4738 20.2995 32.0035 21.75 31.007C21.1595 33.771 19.8966 36.1062 17.9645 38.0277C15.3991 40.5791 11.7379 41.8874 6.90662 41.8874C5.41328 41.8874 3.69132 41.7563 1.7384 41.4914L1.1712 41.4145L1.1712 41.9869L1.1712 51.5995L1.1712 52.0995L1.6712 52.0995C1.99337 52.0995 2.45676 52.14 3.07186 52.2272C3.61721 52.3173 4.16318 52.3637 4.70956 52.3664C5.16239 52.454 5.58237 52.5 5.96693 52.5C15.094 52.5 22.2158 50.0717 27.2578 45.1484C32.2232 40.3016 34.6576 32.8932 34.6576 23.0288C34.6576 16.1032 33.0749 10.5945 29.8496 6.56205Z"
-                        stroke="#5D8A9E"
-                      />
-                    </svg>
-                  </div>
-                  <div class="testimonial-slider--item--details">
-                    <h5>
-                      Eget eu massa et consectetur. Mauris donec. Leo a, id sed
-                      duis proin sodales. Turpis viverra diam porttitor mattis
-                      morbi ac amet. Euismod commodo. We get you customer
-                      relationships that last.
-                    </h5>
-                  </div>
-                </div>
-              </div>
-              <!--Testimonial Slider Items-->
-              <div class="testimonial-slider--item">
-                <div class="testimonial-slider--item--thumb">
-                  <img src="images/testimonial/client3.png" alt="client" />
-                </div>
-                <div class="testimonial-slider--item--content">
-                  <div
-                    class="testimonial-slider--item--header d-flex align-items-center justify-content-between"
-                  >
-                    <div class="testimonial-slider--item--author">
-                      <h4>Mike lerson</h4>
-                      <p>Product Manager - Static Mania</p>
-                    </div>
-                    <svg
-                      width="71"
-                      height="53"
-                      viewBox="0 0 71 53"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M63.1002 45.1484C68.0656 40.3016 70.5 32.8932 70.5 23.0288C70.5 16.1032 68.9173 10.5945 65.692 6.56205L65.6921 6.56202L65.6877 6.5567C62.3665 2.51965 57.9712 0.50001 52.5486 0.50001C47.8662 0.50001 43.9762 2.01153 40.9198 5.05125L40.9198 5.05121L40.9145 5.05655C37.8712 8.17499 36.3424 11.9046 36.3424 16.2199C36.3424 20.6903 37.7213 24.503 40.4905 27.6271C43.1951 30.8699 46.9685 32.4738 51.7432 32.4738C54.171 32.4738 56.142 32.0035 57.5924 31.007C57.0019 33.771 55.739 36.1062 53.807 38.0277C51.2415 40.5791 47.5803 41.8874 42.749 41.8874C41.2557 41.8874 39.5337 41.7563 37.5808 41.4914L37.0136 41.4145L37.0136 41.9869L37.0136 51.5995L37.0136 52.0995L37.5136 52.0995C37.8358 52.0995 38.2992 52.14 38.9143 52.2272C39.4596 52.3173 40.0056 52.3637 40.552 52.3664C41.0048 52.454 41.4248 52.5 41.8093 52.5C50.9364 52.5 58.0582 50.0717 63.1002 45.1484ZM63.1002 45.1484L62.751 44.7906L63.1002 45.1484ZM29.8496 6.56205L29.8497 6.56202L29.8453 6.55669C26.5241 2.51964 22.1288 0.500007 16.7062 0.500007C12.0238 0.500006 8.1338 2.01153 5.07734 5.0512L5.07213 5.05654C2.02878 8.17499 0.499996 11.9046 0.499995 16.2199C0.499995 20.6903 1.87891 24.503 4.64807 27.6271C7.35271 30.8699 11.1261 32.4738 15.9008 32.4738C18.3286 32.4738 20.2995 32.0035 21.75 31.007C21.1595 33.771 19.8966 36.1062 17.9645 38.0277C15.3991 40.5791 11.7379 41.8874 6.90662 41.8874C5.41328 41.8874 3.69132 41.7563 1.7384 41.4914L1.1712 41.4145L1.1712 41.9869L1.1712 51.5995L1.1712 52.0995L1.6712 52.0995C1.99337 52.0995 2.45676 52.14 3.07186 52.2272C3.61721 52.3173 4.16318 52.3637 4.70956 52.3664C5.16239 52.454 5.58237 52.5 5.96693 52.5C15.094 52.5 22.2158 50.0717 27.2578 45.1484C32.2232 40.3016 34.6576 32.8932 34.6576 23.0288C34.6576 16.1032 33.0749 10.5945 29.8496 6.56205Z"
-                        stroke="#5D8A9E"
-                      />
-                    </svg>
-                  </div>
-                  <div class="testimonial-slider--item--details">
-                    <h5>
-                      Eget eu massa et consectetur. Mauris donec. Leo a, id sed
-                      duis proin sodales. Turpis viverra diam porttitor mattis
-                      morbi ac amet. Euismod commodo. We get you customer
-                      relationships that last.
-                    </h5>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- 
-  #############
-  Blog Home Section
-  #############
--->
-    <section class="blog">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <div
-              class="d-flex align-items-center justify-content-between blog-header"
-            >
-              <h3>News & Consultant</h3>
-              <a href="blog.html" class="d-md-flex align-items-center d-none">
-                <span>Explore All </span>
-                <i class="ph-arrow-right"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div
-            class="col-md-4"
-            data-aos="fade-up"
-            data-aos-once="true"
-            data-aos-duration="1000"
-            data-aos-delay="0"
-          >
-            <div class="blog-card position-relative">
-              <div class="blog-card-thumb">
-                <img src="images/blog/blog1.png" alt="blog-image" />
-              </div>
-              <div class="blog-card-content">
-                <a href="blog-single.html">
-                  <h5>10 popular Buliding designs that increse site values</h5>
-                </a>
-                <a
-                  href="blog-single.html"
-                  class="d-flex align-items-center stretched-link"
-                >
-                  <span>Read the Article</span>
-                  <i class="ph-arrow-right"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div
-            class="col-md-4"
-            data-aos="fade-up"
-            data-aos-once="true"
-            data-aos-duration="1500"
-            data-aos-delay="50"
-          >
-            <article class="blog-card position-relative">
-              <div class="blog-card-thumb">
-                <img src="images/blog/blog2.png" alt="blog-image" />
-              </div>
-              <div class="blog-card-content">
-                <a href="blog-single.html">
-                  <h5>Popular designs to beautify your Construction</h5>
-                </a>
-                <a
-                  href="blog-single.html"
-                  class="d-flex align-items-center stretched-link"
-                >
-                  <span>Read the Article</span>
-                  <i class="ph-arrow-right"></i>
-                </a>
-              </div>
-            </article>
-          </div>
-          <div
-            class="col-md-4"
-            data-aos="fade-up"
-            data-aos-once="true"
-            data-aos-duration="2000"
-            data-aos-delay="100"
-          >
-            <article class="blog-card position-relative">
-              <div class="blog-card-thumb">
-                <img src="images/blog/blog3.png" alt="blog-image" />
-              </div>
-              <div class="blog-card-content">
-                <a href="blog-single.html">
-                  <h5>Delightful home decor trend for Summer</h5>
-                </a>
-                <a
-                  href="blog-single.html"
-                  class="d-flex align-items-center stretched-link"
-                >
-                  <span>Read the Article</span>
-                  <i class="ph-arrow-right"></i>
-                </a>
-              </div>
-            </article>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-6">
-            <a
-              href="blog.html"
-              class="btn btn-small btn-outline btn-mobile d-md-none align-items-center d-flex w-auto"
-            >
-              <span>Explore All </span>
-              <i class="ph-caret-right"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-7 mx-auto">
-            <div class="cta">
-              <h4>For Recent Update, News.</h4>
-              <p>
-                We helps businesses customize, automate and scale up their ad
-                production and delivery.
-              </p>
-              <form action="GET" class="flex align-items-center">
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="Enter Your Email"
-                />
-                <button class="btn d-block d-md-inline-block w-md-auto w-100">
-                  Subscribe
-                </button>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
+  
     <!-- 
   #############
   Footer Navigation Section

@@ -113,8 +113,9 @@
           </h3>
           <p>
           SABE offers training on various software programs used in engineering fields, including:<br>
-            2. Autodest <br>
-            3. Revit<br>
+            1. ETABS<br>
+            2. AutoCAD <br>
+            3. Autodest Revit<br>
             4. SketchUp<br>
             5. Civil 3D<br>
             6. Archicade<br>

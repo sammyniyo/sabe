@@ -12,3 +12,7 @@ Route::get('/services', [PageController::class, 'services']);
 Route::get('/software-training', [PageController::class, 'softwareTraining']);
 Route::get('/contact-us', [PageController::class, 'contactUs']);
 
+use App\Http\Controllers\StudentController;
+
+Route::post('/register', [StudentController::class, 'register'])->name('register');
+

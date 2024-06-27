@@ -21,7 +21,7 @@
 <nav class="navbar navbar-expand-lg navbar-white" id="navigationBar">
     <div class="container-fluid navbar-container">
       <div class="d-flex align-items-center">
-        <a class="navbar-brand" href="index.html">
+        <a class="navbar-brand" href="{{ url('/') }}">
           <img src="images/logo.svg" alt="logo">
         </a>
         <a href="tel:+250788896603" class="navbar-number align-items-center">
@@ -33,7 +33,7 @@
         </a>
       </div>
       <div class=" d-none d-sm-flex align-items-center ms-auto ms-lg-0 order-lg-last">
-        <a class="btn btn-small btn-outline d-none d-lg-inline-block" data-bs-toggle="modal" href="#login" role="button">Book Your Slot</a>
+        <a class="btn btn-small btn-outline d-none d-lg-inline-block" data-bs-toggle="modal" href="#createAccount" role="button">Book Your Slot</a>
       </div>
       <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="open ">
@@ -72,7 +72,7 @@
             <a class="nav-link" href="{{ url('/contact-us') }}">Contact</a>
         </li>
         <li class="nav-item d-none d-sm-inline-block d-lg-none">
-            <a class="btn btn-small btn-outline" data-bs-toggle="modal" href="#login" role="button">Book Your Slot</a>
+            <a class="btn btn-small btn-outline" data-bs-toggle="modal" href="#createAccount" role="button">Book Your Slot</a>
         </li>
         </ul>
       </div>
@@ -1003,174 +1003,67 @@ health standards before distribution.
       </div>
     </div>
 
-    <!-- Modal Create Account -->
-    <div
-      class="modal fade modal-createAccount"
-      id="createAccount"
-      tabindex="-2"
-      aria-labelledby="createAccountLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h4 id="createAccountLabel">Request for Visit</h4>
-            <button
-              type="button"
-              class="btn-modal-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            >
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z"
-                  stroke="#1C4456"
-                  stroke-width="2.3"
-                  stroke-miterlimit="10"
-                ></path>
-                <path
-                  d="M15 9L9 15"
-                  stroke="#1C4456"
-                  stroke-width="2.3"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                ></path>
-                <path
-                  d="M15 15L9 9"
-                  stroke="#1C4456"
-                  stroke-width="2.3"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                ></path>
-              </svg>
-            </button>
-          </div>
-          <div class="modal-body">
-            <div class="container-fluid">
-              <div class="modal-property-details-form">
-                <form class="contact-form-items row">
-                  <div class="col-sm-6">
-                    <div class="input-group">
-                      <span class="input-group-text">
-                        <i class="ph-user"></i>
-                      </span>
-                      <input
-                        type="text"
-                        class="form-control"
-                        placeholder="Full Name"
-                      />
-                    </div>
-                  </div>
-                  <div class="col-sm-6">
-                    <div class="input-group">
-                      <span class="input-group-text">
-                        <i class="ph-envelope-simple-open"></i>
-                      </span>
-                      <input
-                        type="email"
-                        class="form-control"
-                        placeholder="Email Address"
-                      />
-                    </div>
-                  </div>
-                  <div class="col-sm-6">
-                    <div class="input-group">
-                      <span class="input-group-text">
-                        <i class="ph-phone"></i>
-                      </span>
-                      <input
-                        type="text"
-                        class="form-control"
-                        placeholder="Phone Number"
-                      />
-                    </div>
-                  </div>
-                  <div class="col-sm-6">
-                    <div class="input-group">
-                      <span class="input-group-text">
-                        <i class="ph-map-pin"></i>
-                      </span>
-                      <input
-                        type="text"
-                        class="form-control"
-                        placeholder="Address"
-                      />
-                    </div>
-                  </div>
-                  <div class="col-sm-6">
-                    <div class="input-group">
-                      <span class="input-group-text">
-                        <i class="ph-keyhole"></i>
-                      </span>
-                      <input
-                        type="password"
-                        class="form-control"
-                        placeholder="Password"
-                      />
-                    </div>
-                  </div>
-                  <div class="col-sm-6">
-                    <div class="input-group">
-                      <span class="input-group-text">
-                        <i class="ph-keyhole"></i>
-                      </span>
-                      <input
-                        type="password"
-                        class="form-control"
-                        placeholder="Re-Password"
-                      />
-                    </div>
-                  </div>
-                  <div class="col-12">
-                    <div class="form-check">
-                      <input
-                        class="form-check-input"
-                        type="checkbox"
-                        value=""
-                        id="flexCheckDefault2"
-                      />
-                      <label class="form-check-label" for="flexCheckDefault2">
-                        <span>I agree to All </span
-                        ><a href="">Terms & Conditions</a>
-                      </label>
-                    </div>
-                  </div>
-                  <div class="w-100 contact-form-button">
-                    <button type="submit" class="btn btn-large d-block w-100">
-                      Create Account
-                    </button>
-                  </div>
-                  <div class="w-100 contact-form-button">
-                    <button
-                      type="submit"
-                      class="btn btn-large btn-outline d-block w-100 mt-3"
-                    >
-                      <i class="ph-google-logo align-top"></i>
-                      <span> Create Account with Google </span>
-                    </button>
-                  </div>
-                </form>
+        <!-- Modal Create Account -->
+<div class="modal fade modal-createAccount" id="createAccount" tabindex="-1" aria-labelledby="createAccountLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 id="createAccountLabel">Book Your Slot</h4>
+        <button type="button" class="btn-modal-close" data-bs-dismiss="modal" aria-label="Close">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z" stroke="#1C4456" stroke-width="2.3" stroke-miterlimit="10"></path>
+            <path d="M15 9L9 15" stroke="#1C4456" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M15 15L9 9" stroke="#1C4456" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="container-fluid">
+          <div class="modal-property-details-form">
+            <form class="contact-form-items row" method="POST" action="{{ route('register') }}">
+              @csrf
+              <div class="col-sm-6">
+                <div class="input-group">
+                  <span class="input-group-text"><i class="ph-user"></i></span>
+                  <input type="text" class="form-control" name="name" placeholder="Full Name" required />
+                </div>
               </div>
-            </div>
-          </div>
-          <div class="modal-footer text-center justify-content-center">
-            <p class="bold">
-              Have an account?
-              <a href="#login" data-bs-toggle="modal" data-bs-dismiss="modal"
-                >Log In
-              </a>
-            </p>
+              <div class="col-sm-6">
+                <div class="input-group">
+                  <span class="input-group-text"><i class="ph-envelope-simple-open"></i></span>
+                  <input type="email" class="form-control" name="email" placeholder="Email Address" required />
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="input-group">
+                  <span class="input-group-text"><i class="ph-phone"></i></span>
+                  <input type="text" class="form-control" name="phone" placeholder="Phone Number" required />
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="input-group">
+                  <span class="input-group-text"><i class="ph-map-pin"></i></span>
+                  <input type="text" class="form-control" name="address" placeholder="Address" required />
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault2" required />
+                  <label class="form-check-label" for="flexCheckDefault2">
+                    <span>I agree to all </span><a href="">Terms & Conditions</a>
+                  </label>
+                </div>
+              </div>
+              <div class="w-100 contact-form-button">
+                <button type="submit" class="btn btn-large d-block w-100">Book Your Slot</button>
+              </div>
+            </form>
           </div>
         </div>
       </div>
     </div>
-
+  </div>
+</div>
     <!-- Modal Reset Password -->
     <div
       class="modal fade modal-resetPassword"

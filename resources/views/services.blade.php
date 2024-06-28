@@ -101,141 +101,102 @@
 <section class="company">
   <div class="container">
     <div class="row align-items-center" >
-      <div class="col-md-6 order-lg-1 order-md-2">
-        <div class="company-vision--thumb" data-aos="fade-up" data-aos-once="true" data-aos-duration="1000" data-aos-delay="400">
-          <img src="images/about/company-history2.png" alt="company-details2">
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-5 ms-lg-auto  order-lg-2 order-md-1" data-aos="fade-up" data-aos-once="true" data-aos-duration="1500" data-aos-delay="200">
-        <div class="company-vision--content">
-          <h3>
-          1. Training In Engineering Software
-          </h3>
-          <p>
-          SABE offers training on various software programs used in engineering fields, including:<br>
-            1. ETABS<br>
-            2. AutoCAD <br>
-            3. Autodest Revit<br>
-            4. SketchUp<br>
-            5. Civil 3D<br>
-            6. Archicade<br>
-            7. Prokon<br>
-            8. Adobe Illustrator<br>
-            9. Lumion<br>
-            10. Adobe Photoshop<br>
-            11. Autodesk Robot<br>
-            12. Tekla Structures<br>
-            13. Twinmotion
-             
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-<br><br>
-  <div class="container">
-    <div class="row align-items-center">
-      <!-- Text Column -->
-      <div class="col-md-6 col-lg-5 order-lg-1 order-md-1" data-aos="fade-up" data-aos-once="true" data-aos-duration="1500" data-aos-delay="200">
-        <div class="company-vision--content">
-          <h3>2. Water Supply, Water Collection, Water Treatment
-          </h3>
-          <p>Water Supply, Water Collection, Water Treatment" are key aspects of water management.
+      <div class="blog-single-blockquotes">
+          <blockquote class="blog-single-blockquotes-v1">
+            <p class="bold">1. Training In Engineering Software</p>
+            <p>SABE offers training on various software programs used in engineering fields, including:</p>
+            <ul>
+              <li>
+                <p>ETABS</p>
+              </li>
+              <li>
+                <p>AutoCAD</p>
+              </li>
+              <li>
+                <p>Autodest Revit</p>
+              </li>
+              <li>
+                <p>SketchUp</p>
+              </li>
+              <li>
+                <p>Civil 3D</p>
+              </li>
+              <li>
+                <p>Archicade</p>
+              </li>
+              <li>
+                <p>Prokon
+              <li>
+                <p>Adobe Illustrator</p>
+              </li>
+              <li>
+                <p>Lumion</p>
+              </li>
+              <li>
+                <p>Adobe Photoshop
+                </p>
+              </li>
+              <li>
+                <p>Autodesk Robot
+                </p>
+              </li>
+              <li>
+                <p>Tekla Structures</p>
+              </li>
+              <li>
+                <p>Twin Motion</p>
+              </li>
+              
+            </ul>
+            <div class="blog-single-blockquotes-content">
+              <p class="bold">2. Water Supply, Water Collection, Water Treatment</p>
+              <ul>
+                <li>
+                  <p>Water Supply, Water Collection, Water Treatment" are key aspects of water management.
 Water supply involves delivering potable water from sources like rivers and aquifers to consumers.
 Water collection gathers water from these sources, including rainwater.
 Water treatment purifies this collected water to remove contaminants, ensuring safety and compliance with
-health standards before distribution.
-          </p>
-        </div>
-      </div>
-      <!-- Image Column -->
-      <div class="col-md-6 order-lg-2 order-md-2 ms-lg-auto">
-        <div class="company-vision--thumb" data-aos="fade-up" data-aos-once="true" data-aos-duration="1000" data-aos-delay="400">
-          <img src="images/about/company-history2.png" alt="company-details2">
-        </div>
-      </div>
-    </div>
-  </div>
-  <br><br>
-  <div class="container">
-    <div class="row align-items-center" >
-      <div class="col-md-6 order-lg-1 order-md-2">
-        <div class="company-vision--thumb" data-aos="fade-up" data-aos-once="true" data-aos-duration="1000" data-aos-delay="400">
-          <img src="images/about/company-history2.png" alt="company-details2">
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-5 ms-lg-auto  order-lg-2 order-md-1" data-aos="fade-up" data-aos-once="true" data-aos-duration="1500" data-aos-delay="200">
-        <div class="company-vision--content">
-          <h3>
-          3. Construction Engineering Projects
-          </h3>
-          <p>
-          Construction Engineering Projects involve the planning, design, and execution of infrastructure such as buildings, roads, bridges, and water systems. They encompass site analysis, structural design, resource management, and adherence to safety and regulatory standards. These projects require coordination among various stakeholders to ensure timely and budget-compliant completion.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <br><br>
-  <div class="container">
-    <div class="row align-items-center">
-      <!-- Text Column -->
-      <div class="col-md-6 col-lg-5 order-lg-1 order-md-1" data-aos="fade-up" data-aos-once="true" data-aos-duration="1500" data-aos-delay="200">
-        <div class="company-vision--content">
-          <h3>4. Architectural And Consultant
-          </h3>
-          <p>Architectural and Consultant" services involve designing buildings and advising on construction projects. Architects create blueprints and plans that ensure functionality, aesthetics, and safety, while consultants provide specialized expertise on aspects like structural integrity, environmental impact, and regulatory compliance. Together, they guide projects from concept to completion, ensuring efficiency and quality.
-          </p>
-        </div>
-      </div>
-      <!-- Image Column -->
-      <div class="col-md-6 order-lg-2 order-md-2 ms-lg-auto">
-        <div class="company-vision--thumb" data-aos="fade-up" data-aos-once="true" data-aos-duration="1000" data-aos-delay="400">
-          <img src="images/about/company-history2.png" alt="company-details2">
+health standards before distribution.</p>
+                </li>
+              </ul>
+            </div>
+            <div class="blog-single-blockquotes-content">
+              <p class="bold">3. Construction Engineering Projects</p>
+              <ul>
+                <li>
+                  <p>Construction Engineering Projects involve the planning, design, and execution of infrastructure such as buildings, roads, bridges, and water systems. They encompass site analysis, structural design, resource management, and adherence to safety and regulatory standards. These projects require coordination among various stakeholders to ensure timely and budget-compliant completion.</p>
+                </li>
+              </ul>
+            </div>
+            <div class="blog-single-blockquotes-content">
+              <p class="bold">4. Architectural And Consultant</p>
+              <ul>
+                <li>
+                  <p>Architectural and Consultant" services involve designing buildings and advising on construction projects. Architects create blueprints and plans that ensure functionality, aesthetics, and safety, while consultants provide specialized expertise on aspects like structural integrity, environmental impact, and regulatory compliance. Together, they guide projects from concept to completion, ensuring efficiency and quality.</p>
+                </li>
+              </ul>
+            </div>
+            <div class="blog-single-blockquotes-content">
+              <p class="bold">5. Technical Testing And Analysis</p>
+              <ul>
+                <li>
+                  <p>Technical Testing and Analysis" involves evaluating materials, systems, and processes to ensure they meet specified standards and performance criteria. This includes laboratory testing, field assessments, and data analysis to verify quality, safety, and compliance. The results guide improvements and validate the reliability of products and infrastructure.</p>
+                </li>
+              </ul>
+            </div>
+            <div class="blog-single-blockquotes-content">
+              <p class="bold">6. Research Development On Natural Sciences And Engineering.</p>
+              <ul>
+                <li>
+                  <p>Focuses on advancing knowledge and technology in fields like biology, chemistry, physics, and engineering. It involves experimental studies, innovation, and the application of scientific principles to develop new materials, processes, and solutions. This research drives progress in industries, improves quality of life, and addresses global challenges.</p>
+                </li>
+              </ul>
+            </div>
+          </blockquote>
         </div>
       </div>
     </div>
   </div>
-  <br><br>
-  <div class="container">
-    <div class="row align-items-center" >
-      <div class="col-md-6 order-lg-1 order-md-2">
-        <div class="company-vision--thumb" data-aos="fade-up" data-aos-once="true" data-aos-duration="1000" data-aos-delay="400">
-          <img src="images/about/company-history2.png" alt="company-details2">
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-5 ms-lg-auto  order-lg-2 order-md-1" data-aos="fade-up" data-aos-once="true" data-aos-duration="1500" data-aos-delay="200">
-        <div class="company-vision--content">
-          <h3>
-          5. Technical Testing And Analysis
-          </h3>
-          <p>
-          "Technical Testing and Analysis" involves evaluating materials, systems, and processes to ensure they meet specified standards and performance criteria. This includes laboratory testing, field assessments, and data analysis to verify quality, safety, and compliance. The results guide improvements and validate the reliability of products and infrastructure.          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <br><br>
-  <div class="container">
-    <div class="row align-items-center">
-      <!-- Text Column -->
-      <div class="col-md-6 col-lg-5 order-lg-1 order-md-1" data-aos="fade-up" data-aos-once="true" data-aos-duration="1500" data-aos-delay="200">
-        <div class="company-vision--content">
-          <h3>6. Research Development On Natural Sciences And Engineering.
-          </h3>
-          <p>Focuses on advancing knowledge and technology in fields like biology, chemistry, physics, and engineering. It involves experimental studies, innovation, and the application of scientific principles to develop new materials, processes, and solutions. This research drives progress in industries, improves quality of life, and addresses global challenges.
-          </p>
-        </div>
-      </div>
-      <!-- Image Column -->
-      <div class="col-md-6 order-lg-2 order-md-2 ms-lg-auto">
-        <div class="company-vision--thumb" data-aos="fade-up" data-aos-once="true" data-aos-duration="1000" data-aos-delay="400">
-          <img src="images/about/company-history2.png" alt="company-details2">
-        </div>
-      </div>
-    </div>
-  </div>
-  <br><br>
 </section>
 
 

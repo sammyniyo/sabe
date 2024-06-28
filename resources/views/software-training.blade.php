@@ -108,7 +108,7 @@
         <div class="grid row row-cols-xl-3 row-cols-md-2 g-4">
           <div class="properties-card">
             <div class="properties-card--thumb">
-              <img src="images/properties/properties1.png" alt="properties1" />
+              <img src="images/courses/etabs.png" alt="etabs"/>
             </div>
             <div class="properties-card--content">
               <div
@@ -131,7 +131,7 @@
 
           <div class="properties-card">
             <div class="properties-card--thumb">
-              <img src="images/properties/properties2.png" alt="properties1" />
+              <img src="images/courses/autocad.jpg" alt="autocad" />
             </div>
             <div class="properties-card--content">
               <div
@@ -154,7 +154,7 @@
 
           <div class="properties-card">
             <div class="properties-card--thumb">
-              <img src="images/properties/properties3.png" alt="properties1" />
+              <img src="images/courses/revit.jpg" alt="Autodesk Revit" />
             </div>
             <div class="properties-card--content">
               <div
@@ -177,7 +177,7 @@
 
           <div class="properties-card">
             <div class="properties-card--thumb">
-              <img src="images/properties/properties4.png" alt="properties1" />
+              <img src="images/courses/sketchup.jpg" alt="sketchup" />
             </div>
             <div class="properties-card--content">
               <div
@@ -200,7 +200,7 @@
 
           <div class="properties-card">
             <div class="properties-card--thumb">
-              <img src="images/properties/properties5.png" alt="properties1" />
+              <img src="images/courses/civil3d.jpg" alt="civil3d" />
             </div>
             <div class="properties-card--content">
               <div
@@ -224,7 +224,7 @@
 
           <div class="properties-card">
             <div class="properties-card--thumb">
-              <img src="images/properties/properties6.png" alt="properties1" />
+              <img src="images/courses/archicad.png" alt="Archicad" />
             </div>
             <div class="properties-card--content">
               <div
@@ -248,7 +248,7 @@
           
           <div class="properties-card">
             <div class="properties-card--thumb">
-              <img src="images/properties/properties1.png" alt="properties1" />
+              <img src="images/courses/lumion.jpg" alt="Lumion" />
             </div>
             <div class="properties-card--content">
               <div
@@ -271,7 +271,7 @@
 
           <div class="properties-card">
             <div class="properties-card--thumb">
-              <img src="images/properties/properties1.png" alt="properties1" />
+              <img src="images/courses/twinmotion.jpg" alt="Twin Motion" />
             </div>
             <div class="properties-card--content">
               <div
@@ -294,7 +294,7 @@
 
           <div class="properties-card">
             <div class="properties-card--thumb">
-              <img src="images/properties/properties1.png" alt="properties1" />
+              <img src="images/courses/prokon.png" alt="Prokon" />
             </div>
             <div class="properties-card--content">
               <div
@@ -317,7 +317,7 @@
 
           <div class="properties-card">
             <div class="properties-card--thumb">
-              <img src="images/properties/properties1.png" alt="properties1" />
+              <img src="images/courses/adobe-illustrator.jpg" alt="Adobe Illustrator" />
             </div>
             <div class="properties-card--content">
               <div
@@ -340,7 +340,7 @@
 
           <div class="properties-card">
             <div class="properties-card--thumb">
-              <img src="images/properties/properties1.png" alt="properties1" />
+              <img src="images/courses/adobe-photoshop.jpg" alt="Adobe Photoshop" />
             </div>
             <div class="properties-card--content">
               <div
@@ -363,7 +363,7 @@
 
           <div class="properties-card">
             <div class="properties-card--thumb">
-              <img src="images/properties/properties1.png" alt="properties1" />
+              <img src="images/courses/tekla-structures.jpg" alt="Tekla Structures" />
             </div>
             <div class="properties-card--content">
               <div

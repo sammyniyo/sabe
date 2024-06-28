@@ -84,7 +84,7 @@
         <div class="row">
           <div class="col-xl-8 col-lg-10">
             <div class="hero-shape">
-              <img src="images/hero/hero-bg.png" alt="hero-bg" />
+              <img src="images/hero/hero-bg-im.png" alt="hero-bg" />
             </div>
             <div
               class="hero-content"
@@ -99,7 +99,7 @@
               We go beyond simply providing blueprints.  We collaborate closely with you to understand your goals and challenges, offering valuable insights and expertise at every step.  Our commitment to clear communication ensures transparency and fosters a collaborative environment.
               </p>
               <div class=" d-none d-sm-flex align-items-center ms-auto ms-lg-0 order-lg-last">
-                 <a class="btn btn-small btn-outline d-none d-lg-inline-block" data-bs-toggle="modal" href="#login" role="button">Book Your Slot</a>
+                 <a class="btn btn-small btn-outline d-none d-lg-inline-block" data-bs-toggle="modal" href="#createAccount" role="button">Book Your Slot</a>
               </div>
             </div>
           </div>
@@ -324,7 +324,7 @@
         <div class="grid row row-cols-xl-3 row-cols-md-2 g-4">
           <div class="properties-card industrial">
             <div class="properties-card--thumb">
-              <img src="images/properties/properties1.png" alt="properties1" />
+              <img src="images/courses/etabs.png" alt="etabs" />
             </div>
             <div class="properties-card--content">
               <div
@@ -347,7 +347,7 @@
 
           <div class="properties-card">
             <div class="properties-card--thumb">
-              <img src="images/properties/properties2.png" alt="properties1" />
+              <img src="images/courses/autocad.jpg" alt="autocad" />
             </div>
             <div class="properties-card--content">
               <div
@@ -356,7 +356,7 @@
                 <span>AutoCAD</span>
               </div>  
               <div class="d-flex align-items-center properties-card--content--address">
-                <span>Develop a strong foundation in 2D and 3D drafting with AutoCAD, the industry leader. Learn to create precise technical drawings for architectural, engineering, and construction projects. (Course content may include: drawing tools, dimensioning,..)</span>
+                <span>Develop a strong foundation in 2D and 3D drafting with AutoCAD, the industry leader. Learn to create precise technical drawings for architectural, engineering, and construction projects. (Course content includes: drawing tools, dimensioning,..)</span>
             </div>           
               <div
                 class="properties-card--footer d-flex align-items-center justify-content-between"
@@ -370,7 +370,7 @@
 
           <div class="properties-card industrial">
             <div class="properties-card--thumb">
-              <img src="images/properties/properties3.png" alt="properties1" />
+              <img src="images/courses/revit.jpg" alt="Autodesk Revit" />
             </div>
             <div class="properties-card--content">
               <div
@@ -393,7 +393,7 @@
 
           <div class="properties-card agriculture">
             <div class="properties-card--thumb">
-              <img src="images/properties/properties4.png" alt="properties1" />
+              <img src="images/courses/sketchup.jpg" alt="sketchup" />
             </div>
             <div class="properties-card--content">
               <div
@@ -416,7 +416,7 @@
 
           <div class="properties-card">
             <div class="properties-card--thumb">
-              <img src="images/properties/properties5.png" alt="properties1" />
+              <img src="images/courses/civil3d.jpg" alt="civil3d" />
             </div>
             <div class="properties-card--content">
               <div
@@ -440,7 +440,7 @@
 
           <div class="properties-card">
             <div class="properties-card--thumb">
-              <img src="images/properties/properties6.png" alt="properties1" />
+              <img src="images/courses/archicad.png" alt="Archicad" />
             </div>
             <div class="properties-card--content">
               <div
@@ -495,7 +495,7 @@
               <p>
               We invest in your growth! Benefit from comprehensive training programs, including software training courses we offer to both new and existing employees. Stay ahead of the curve with opportunities to learn the latest industry trends and tools.
               </p>
-              <a href="{{ url('/contact-us') }}" class="btn btn-small">Get Started</a>
+              <a href="{{ url('/contact-us') }}" class="btn btn-small">Get In Touch</a>
             </div>
           </div>
           <div class="col-lg-6 order-lg-2 order-1">

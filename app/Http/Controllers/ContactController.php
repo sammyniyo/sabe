@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Contact;
 use Illuminate\Support\Facades\Mail;
+use App\Mail\ContactMail;
 
 class ContactController extends Controller
 {
@@ -26,8 +27,8 @@ class ContactController extends Controller
             'message' => $request->message,
         ]);
 
-        // Send an email notification (optional)
-        Mail::to('sabe@example.com')->send(new ContactMail($contact));
+        // Send an email notification
+        Mail::to('sabeltdrw@gmail.com')->send(new ContactMail($contact));
 
         return redirect()->back()->with('success', 'Message sent successfully!');
     }

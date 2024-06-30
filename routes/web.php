@@ -26,6 +26,11 @@ Route::get('/twinmotion', [PageController::class, 'twinmotion']);
 
 use App\Http\Controllers\StudentController;
 
-Route::post('/students', [StudentController::class, 'store'])->name('students.store');
+Route::post('/students/store', [StudentController::class, 'store'])->name('students.store');
+
+
+use App\Http\Controllers\ContactController;
+
+Route::post('/contact', [ContactController::class, 'store'])->name('contact.store');
 
 

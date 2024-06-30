@@ -22,7 +22,7 @@
     <div class="container-fluid navbar-container">
       <div class="d-flex align-items-center">
         <a class="navbar-brand" href="{{ url('/') }}">
-          <img src="images/logo.svg" alt="logo">
+        <img src="images/logo.png" alt="logo" height="50" width="50">
         </a>
         <a href="tel:+250788896603" class="navbar-number align-items-center">
                 <svg width="6" height="7" viewBox="0 0 6 7" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -160,8 +160,6 @@
     </div>
 </section>
 
-
-
     <!--For Desktops -->
     <section class="footer d-none d-xl-block">
       <div class="container-fluid footer-container">
@@ -169,7 +167,7 @@
           <div class="offset-xl-1 col-xl-4">
             <div class="footer-widget">
               <div class="footer-logo">
-                <img src="images/logo.svg" alt="logo" />
+              <img src="images/logo.png" alt="logo" height="50" width="50">
               </div>
               <div class="footer-address">
                 <p>
@@ -364,7 +362,7 @@
           <div class="col-sm-6">
             <div class="footer-widget">
               <div class="footer-logo">
-                <img src="images/logo.svg" alt="logo" />
+              <img src="images/logo.png" alt="logo" height="50" width="50">
               </div>
               <div class="footer-address">
                 <p>
@@ -578,7 +576,7 @@
           <div class="col-12">
             <div class="footer-widget">
               <div class="footer-logo">
-                <img src="images/logo.svg" alt="logo" />
+              <img src="images/logo.png" alt="logo" height="50" width="50">
               </div>
             </div>
           </div>

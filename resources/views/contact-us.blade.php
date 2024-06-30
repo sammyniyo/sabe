@@ -21,7 +21,7 @@
     <div class="container-fluid navbar-container">
       <div class="d-flex align-items-center">
         <a class="navbar-brand" href="{{ url('/') }}">
-          <img src="images/logo.svg" alt="logo">
+        <img src="images/logo.png" alt="logo" height="50" width="50">
         </a>
         <a href="tel:+250788896603" class="navbar-number align-items-center">
                 <svg width="6" height="7" viewBox="0 0 6 7" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -93,39 +93,46 @@
     <div class="row">
       <div class="col-12">
         <div class="contact-form">
-          <div class="contact-form-layout">
-            <h4>Send Message</h4>
-            <form class="contact-form-items">
-              <div class="input-group">
-                <span class="input-group-text" >
-                  <i class="ph-user"></i>
-                </span>
-                <input type="text" class="form-control" placeholder="Full Name">
-              </div>
-              <div class="input-group">
-                <span class="input-group-text" >
-                  <i class="ph-envelope-simple-open"></i>
-                </span>
-                <input type="email" class="form-control" placeholder="Email Address" >
-              </div>
-              <div class="input-group">
-                <span class="input-group-text" >
-                  <i class="ph-phone"></i>
-                </span>
-                <input type="text" class="form-control" placeholder="Phone Number">
-              </div>
-              <div class="input-group">
-                <textarea class="form-control" placeholder="Message" rows="15" cols="20"></textarea>
-              </div>
-              <div class="w-100 contact-form-button">
-                <button type="submit" class="btn btn-large">Send Message</button>
-              </div>
-            </form>
-          </div>
+        <div class="contact-form-layout">
+    <h4>Send Message</h4>
+    <form action="{{ route('contact.store') }}" method="POST" class="contact-form-items">
+        @csrf
+        <div class="input-group">
+            <span class="input-group-text">
+                <i class="ph-user"></i>
+            </span>
+            <input type="text" name="full_name" class="form-control" placeholder="Full Name" required>
+        </div>
+        <div class="input-group">
+            <span class="input-group-text">
+                <i class="ph-envelope-simple-open"></i>
+            </span>
+            <input type="email" name="email" class="form-control" placeholder="Email Address" required>
+        </div>
+        <div class="input-group">
+            <span class="input-group-text">
+                <i class="ph-phone"></i>
+            </span>
+            <input type="text" name="phone" class="form-control" placeholder="Phone Number" required>
+        </div>
+        <div class="input-group">
+            <textarea name="message" class="form-control" placeholder="Message" rows="15" cols="20" required></textarea>
+        </div>
+        <div class="w-100 contact-form-button">
+            <button type="submit" class="btn btn-large">Send Message</button>
+        </div>
+    </form>
+</div>
+
 
           <div class="contact-form-address">
             <h6>Office Address</h6>
             <p>SHEMA House, KN 1 Road, Kigali</p>
+            <h6>Working Hours</h6>
+            <a href="#" class="phone d-flex align-items-center">
+              <i class="ph-clock"></i>
+              <span>Monday - Friday <br>8:00 AM - 5:00 PM</span>
+            </a>
             <a href="tel:+250788896603" class="phone d-flex align-items-center">
               <i class="ph-phone"></i>
               <span>+250 788 896 603</span>
@@ -286,7 +293,7 @@
           <div class="offset-xl-1 col-xl-4">
             <div class="footer-widget">
               <div class="footer-logo">
-                <img src="images/logo.svg" alt="logo" />
+              <img src="images/logo.png" alt="logo" height="50" width="50">
               </div>
               <div class="footer-address">
                 <p>
@@ -481,7 +488,7 @@
           <div class="col-sm-6">
             <div class="footer-widget">
               <div class="footer-logo">
-                <img src="images/logo.svg" alt="logo" />
+              <img src="images/logo.png" alt="logo" height="50" width="50">
               </div>
               <div class="footer-address">
                 <p>
@@ -695,7 +702,7 @@
           <div class="col-12">
             <div class="footer-widget">
               <div class="footer-logo">
-                <img src="images/logo.svg" alt="logo" />
+              <img src="images/logo.png" alt="logo" height="50" width="50">
               </div>
             </div>
           </div>
@@ -904,7 +911,6 @@
         SABE Ltd ©<span class="newYearMobile"></span>
       </p>
     </section>
-
     <!-- 
   #############
   Login Modals Section

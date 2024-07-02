@@ -71,9 +71,6 @@
         <li class="nav-item">
             <a class="nav-link" href="{{ url('/contact-us') }}">Contact</a>
         </li>
-        <li class="nav-item d-none d-sm-inline-block d-lg-none">
-            <a class="btn btn-small btn-outline" data-bs-toggle="modal" href="#createAccount" role="button">Book Your Slot</a>
-        </li>
         </ul>
       </div>
     </div>
@@ -83,19 +80,9 @@
 
 <section class="property-details" id="property-details">
   <!-- Button trigger modal -->
-  <div class="property-details-bottom-bar d-lg-none d-block position-fixed">
-    <button type="button" class="btn btn-large" data-bs-toggle="modal" data-bs-target="#requestVisit">
-      Request for Visit
-    </button>
-  </div>
+
 
   <div class="container">
-    <div class="row">
-      <div class="col-lg-8">
-        
-      </div>
-      
-    </div>
     <div class="row">
       <div class="col-lg-8">
         <div class="property-details-content">
@@ -125,42 +112,61 @@
       </div>
       <div class="col-lg-4">
         <div class="property-details-form d-none d-lg-block">
-          <h4>Register Now</h4>
-          <form  action="{{ route('students.store') }}" class="contact-form-items">
+          
+        <h4>Register Now</h4>
+          @if (session('success'))
+                            <div class="alert alert-success">
+                                {{ session('success') }}
+                            </div>
+                        @endif
+                        @if (session('error'))
+                            <div class="alert alert-danger">
+                                {{ session('error') }}
+                            </div>
+                        @endif
+                        @if ($errors->any())
+                            <div class="alert alert-danger">
+                                <ul>
+                                    @foreach ($errors->all() as $error)
+                                        <li>{{ $error }}</li>
+                                    @endforeach
+                                </ul>
+                            </div>
+                        @endif
+          <form  action="{{ route('students.store') }}" method="POST" class="contact-form-items">
             @csrf
             <div class="input-group">
               <span class="input-group-text" >
                 <i class="ph-user"></i>
               </span>
-              <input type="text" class="form-control" name="name" placeholder="Full Name" required>
+              <input type="text" class="form-control" name="student_full_name" placeholder="Full Name" required>
             </div>
             <div class="input-group">
               <span class="input-group-text" >
                 <i class="ph-envelope-simple-open"></i>
               </span>
-              <input type="email" class="form-control" name="email" placeholder="Email Address" required>
+              <input type="email" class="form-control" name="student_email" placeholder="Email Address" required>
             </div>
             <div class="input-group">
               <span class="input-group-text" >
                 <i class="ph-phone"></i>
               </span>
-              <input type="text" class="form-control" name="phone" placeholder="Phone Number" required>
+              <input type="text" class="form-control" name="student_phone" placeholder="Phone Number" required>
             </div>
             <div class="input-group">
               <span class="input-group-text" >
                 <i class="ph-map-pin"></i>
               </span>
-              <input type="text" class="form-control" name="address" placeholder="Address" required>
+              <input type="text" class="form-control" name="student_address" placeholder="Address" required>
             </div>
             <div class="w-100 contact-form-button">
-              <button type="submit" class="btn btn-large d-block w-100">Register Now</button>
+                <button type="submit" class="btn btn-large d-block w-100">Book Your Slot</button>
             </div>
           </form>
         </div>
       </div>
     </div>
 </section>
-
 
 
     <!--For Desktops -->
@@ -177,8 +183,7 @@
                   SHEMA House, KN 1 Road, Kigali
                 </p>
                 <p class="contact-number mb-0">
-                  <a href="tel:+250788896603">+250 788 896 603</a>
-                </p>
+                   <a href="tel:+250794423156">+250 794 423 156</a>
                 <p class="contact-email mb-0">
                   <a href="mailto:sabeltdrw@gmail.com">sabeltdrw@gmail.com</a>
                 </p>
@@ -372,7 +377,7 @@
                 SHEMA House, KN 1 Road, Kigali
                 </p>
                 <p class="contact-number mb-0">
-                  <a href="tel:+250788896603">+250 788 896 603</a>
+                <a href="tel:+250794423156">+250 794 423 156</a>
                 </p>
                 <p class="contact-email mb-0">
                   <a href="mailto:sabeltdrw@gmail.com">sabeltdrw@gmail.com</a>
@@ -619,7 +624,7 @@
                 SHEMA House, KN 1 Road, Kigali
                 </p>
                 <p class="contact-number mb-0">
-                  <a href="tel:+250788896603">+250 788 896 603</a>
+                  <a href="tel:+250794423156">+250 794 423 156</a>
                 </p>
                 <p class="contact-email mb-0">
                   <a href="mailto:info@staticmania.com">sabeltdrw@gmail.com</a>
@@ -788,195 +793,6 @@
         SABE Ltd ©<span class="newYearMobile"></span>
       </p>
     </section>
-
- 
-    <!-- Modal Create Account -->
-<div class="modal fade modal-createAccount" id="createAccount" tabindex="-2" aria-labelledby="createAccountLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h4 id="createAccountLabel">Book Your Slot</h4>
-                <button type="button" class="btn-modal-close" data-bs-dismiss="modal" aria-label="Close">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z" stroke="#1C4456" stroke-width="2.3" stroke-miterlimit="10"></path>
-                        <path d="M15 9L9 15" stroke="#1C4456" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"></path>
-                        <path d="M15 15L9 9" stroke="#1C4456" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"></path>
-                    </svg>
-                </button>
-            </div>
-            <div class="modal-body">
-                <div class="container-fluid">
-                    <div class="modal-property-details-form">
-                      <!-- Include this in your main layout or the specific view -->
-@if (session('success'))
-    <div class="alert alert-success">
-        {{ session('success') }}
-    </div>
-@endif
-
-@if (session('error'))
-    <div class="alert alert-danger">
-        {{ session('error') }}
-    </div>
-@endif
-
-@if ($errors->any())
-    <div class="alert alert-danger">
-        <ul>
-            @foreach ($errors->all() as $error)
-                <li>{{ $error }}</li>
-            @endforeach
-        </ul>
-    </div>
-@endif
-
-                        <form action="{{ route('students.store') }}" method="POST" class="contact-form-items row">
-                            @csrf
-
-                            <div class="col-sm-6">
-                                <div class="input-group">
-                                    <span class="input-group-text"><i class="ph-user"></i></span>
-                                    <input type="text" class="form-control" name="full_name" placeholder="Full Name" required>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="input-group">
-                                    <span class="input-group-text"><i class="ph-envelope-simple-open"></i></span>
-                                    <input type="email" class="form-control" name="email" placeholder="Email Address" required>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="input-group">
-                                    <span class="input-group-text"><i class="ph-phone"></i></span>
-                                    <input type="text" class="form-control" name="phone" placeholder="Phone Number" required>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="input-group">
-                                    <span class="input-group-text"><i class="ph-map-pin"></i></span>
-                                    <input type="text" class="form-control" name="address" placeholder="Address" required>
-                                </div>
-                            </div>
-                            <div class="w-100 contact-form-button">
-                                <button type="submit" class="btn btn-large d-block w-100">Book Your Slot</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-    <!-- Modal Reset Password -->
-    <div
-      class="modal fade modal-resetPassword"
-      id="resetPassword"
-      tabindex="-1"
-      aria-labelledby="loginLabel2"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h4 id="loginLabel2">Reset Password</h4>
-            <button
-              type="button"
-              class="btn-modal-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            >
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z"
-                  stroke="#1C4456"
-                  stroke-width="2.3"
-                  stroke-miterlimit="10"
-                ></path>
-                <path
-                  d="M15 9L9 15"
-                  stroke="#1C4456"
-                  stroke-width="2.3"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                ></path>
-                <path
-                  d="M15 15L9 9"
-                  stroke="#1C4456"
-                  stroke-width="2.3"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                ></path>
-              </svg>
-            </button>
-          </div>
-          <div class="modal-body">
-            <div class="container-fluid">
-              <div class="modal-property-details-form">
-                <p>
-                  Enter the email address associated with your account and we'll
-                  send you a link to reset your password.
-                </p>
-                <form class="contact-form-items row">
-                  <div class="col-12">
-                    <div class="input-group">
-                      <span class="input-group-text">
-                        <i class="ph-user"></i>
-                      </span>
-                      <input
-                        type="email"
-                        class="form-control"
-                        placeholder="Email Address"
-                      />
-                    </div>
-                  </div>
-
-                  <div class="w-100 contact-form-button">
-                    <button
-                      type="submit"
-                      class="btn btn-large d-block w-100 mt-3"
-                      data-bs-target="#otp"
-                      data-bs-toggle="modal"
-                      data-bs-dismiss="modal"
-                    >
-                      Get OTP
-                    </button>
-                  </div>
-                  <div class="w-100 contact-form-button">
-                    <button
-                      type="submit"
-                      class="btn btn-large btn-outline d-block w-100 mt-3"
-                      data-bs-target="#login"
-                      data-bs-toggle="modal"
-                      data-bs-dismiss="modal"
-                    >
-                      <span> Return To sign In </span>
-                    </button>
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
-          <div class="modal-footer text-center justify-content-center">
-            <p class="bold">
-              Don’t have an account?
-              <a
-                href="#createAccount"
-                data-bs-toggle="modal"
-                data-bs-dismiss="modal"
-                >Create Account</a
-              >
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
 
     <script src="{{ asset('vendor/jQuery/jquery.min.js') }}"></script>
     <script src="{{ asset('vendor/bootstrap/bootstrap.bundle.min.js') }}"></script>

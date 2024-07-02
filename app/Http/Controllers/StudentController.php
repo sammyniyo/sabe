@@ -15,10 +15,10 @@ class StudentController extends Controller
     {
         // Validate the incoming request data
         $validator = Validator::make($request->all(), [
-            'full_name' => 'required|string|max:255',
-            'email' => 'required|email|max:255|unique:students,email',
-            'phone' => 'required|string|max:15',
-            'address' => 'required|string|max:255',
+            'student_full_name' => 'required|string|max:255',
+            'student_email' => 'required|email|max:255',
+            'student_phone' => 'required|string|max:15',
+            'student_address' => 'required|string|max:255',
         ]);
 
         // Check if validation fails
@@ -29,10 +29,10 @@ class StudentController extends Controller
         try {
             // Create a new student record
             $student = Student::create([
-                'full_name' => $request->full_name,
-                'email' => $request->email,
-                'phone' => $request->phone,
-                'address' => $request->address,
+                'full_name' => $request->student_full_name,
+                'email' => $request->student_email,
+                'phone' => $request->student_phone,
+                'address' => $request->student_address,
             ]);
 
             // Send registration email to the organization

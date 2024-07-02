@@ -13,18 +13,18 @@ class ContactController extends Controller
     {
         // Validate the request
         $request->validate([
-            'full_name' => 'required|string|max:255',
-            'email' => 'required|email|max:255',
-            'phone' => 'required|string|max:15',
-            'message' => 'required|string',
+            'contact_full_name' => 'required|string|max:255',
+            'contact_email' => 'required|email|max:255',
+            'contact_phone' => 'required|string|max:15',
+            'contact_message' => 'required|string',
         ]);
 
         // Create a new contact message
         $contact = Contact::create([
-            'full_name' => $request->full_name,
-            'email' => $request->email,
-            'phone' => $request->phone,
-            'message' => $request->message,
+            'full_name' => $request->contact_full_name,
+            'email' => $request->contact_email,
+            'phone' => $request->contact_phone,
+            'message' => $request->contact_message,
         ]);
 
         // Send an email notification

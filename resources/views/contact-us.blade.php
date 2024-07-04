@@ -23,17 +23,15 @@
         <a class="navbar-brand" href="{{ url('/') }}">
         <img src="images/logo.png" alt="logo" height="50" width="50">
         </a>
-        <a href="tel:+250788896603" class="navbar-number align-items-center">
+        <a href="tel:+250794423156" class="navbar-number align-items-center">
                 <svg width="6" height="7" viewBox="0 0 6 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="3" cy="3.5" r="3" fill="#417086"/>
                 </svg>
-                <i class="ph-phone-bold"></i>
-                  +250 788 896 603     
+                <i class="ph-phone-bold"></i>     
+              +250 794 423 156     
         </a>
       </div>
-      <div class=" d-none d-sm-flex align-items-center ms-auto ms-lg-0 order-lg-last">
-        <a class="btn btn-small btn-outline d-none d-lg-inline-block" data-bs-toggle="modal" href="#createAccount" role="button">Book Your Slot</a>
-      </div>
+
       <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="open ">
           <svg width="24" height="16" viewBox="0 0 24 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -70,9 +68,6 @@
         <li class="nav-item">
             <a class="nav-link" href="{{ url('/contact-us') }}">Contact</a>
         </li>
-        <li class="nav-item d-none d-sm-inline-block d-lg-none">
-            <a class="btn btn-small btn-outline" data-bs-toggle="modal" href="#createAccount" role="button">Book Your Slot</a>
-        </li>
         </ul>
       </div>
     </div>
@@ -95,48 +90,50 @@
         <div class="contact-form">
         <div class="contact-form-layout">
         <h4>Send Message</h4>
-                @if (session('success'))
-                    <div class="alert alert-success">
-                        {{ session('success') }}
-                    </div>
-                @endif
-                @if ($errors->any())
-                    <div class="alert alert-danger">
-                        <ul>
-                            @foreach ($errors->all() as $error)
-                                <li>{{ $error }}</li>
-                            @endforeach
-                        </ul>
-                    </div>
-                @endif
-                <form action="{{ route('contact.store') }}" method="POST" class="contact-form-items">
-                    @csrf
-                    <div class="input-group">
-                        <span class="input-group-text">
-                            <i class="ph-user"></i>
-                        </span>
-                        <input type="text" name="contact_full_name" class="form-control" placeholder="Full Name" required>
-                    </div>
-                    <div class="input-group">
-                        <span class="input-group-text">
-                            <i class="ph-envelope-simple-open"></i>
-                        </span>
-                        <input type="email" name="contact_email" class="form-control" placeholder="Email Address" required>
-                    </div>
-                    <div class="input-group">
-                        <span class="input-group-text">
-                            <i class="ph-phone"></i>
-                        </span>
-                        <input type="text" name="contact_phone" class="form-control" placeholder="Phone Number" required>
-                    </div>
-                    <div class="input-group">
-                        <textarea name="contact_message" class="form-control" placeholder="Message" rows="15" cols="20" required></textarea>
-                    </div>
-                    <div class="w-100 contact-form-button">
-                        <button type="submit" class="btn btn-large">Send Message</button>
-                    </div>
-                </form>
+        @if (session('success'))
+            <div class="alert alert-success">
+                {{ session('success') }}
             </div>
+        @endif
+
+        @if ($errors->any())
+            <div class="alert alert-danger">
+                <ul>
+                    @foreach ($errors->all() as $error)
+                        <li>{{ $error }}</li>
+                    @endforeach
+                </ul>
+            </div>
+        @endif
+
+        <form action="{{ route('contact.store') }}" method="POST" class="contact-form-items">
+            @csrf
+            <div class="input-group">
+                <span class="input-group-text">
+                    <i class="ph-user"></i>
+                </span>
+                <input type="text" name="full_name" class="form-control" placeholder="Full Name" required>
+            </div>
+            <div class="input-group">
+                <span class="input-group-text">
+                    <i class="ph-envelope-simple-open"></i>
+                </span>
+                <input type="email" name="email" class="form-control" placeholder="Email Address" required>
+            </div>
+            <div class="input-group">
+                <span class="input-group-text">
+                    <i class="ph-phone"></i>
+                </span>
+                <input type="text" name="phone" class="form-control" placeholder="Phone Number" required>
+            </div>
+            <div class="input-group">
+                <textarea name="message" class="form-control" placeholder="Message" rows="15" cols="20" required></textarea>
+            </div>
+            <div class="w-100 contact-form-button">
+                <button type="submit" class="btn btn-large">Send Message</button>
+            </div>
+        </form>
+          </div>
 
           <div class="contact-form-address">
             <h6>Office Address</h6>
@@ -924,80 +921,6 @@
       </p>
     </section>
 
-  
-    <!-- Modal Create Account -->
-    <div class="modal fade modal-createAccount" id="createAccount" tabindex="-2" aria-labelledby="createAccountLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h4 id="createAccountLabel">Book Your Slot</h4>
-                <button type="button" class="btn-modal-close" data-bs-dismiss="modal" aria-label="Close">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z" stroke="#1C4456" stroke-width="2.3" stroke-miterlimit="10"></path>
-                        <path d="M15 9L9 15" stroke="#1C4456" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"></path>
-                        <path d="M15 15L9 9" stroke="#1C4456" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"></path>
-                    </svg>
-                </button>
-            </div>
-            <div class="modal-body">
-                <div class="container-fluid">
-                    <div class="modal-property-details-form">
-                        @if (session('success'))
-                            <div class="alert alert-success">
-                                {{ session('success') }}
-                            </div>
-                        @endif
-                        @if (session('error'))
-                            <div class="alert alert-danger">
-                                {{ session('error') }}
-                            </div>
-                        @endif
-                        @if ($errors->any())
-                            <div class="alert alert-danger">
-                                <ul>
-                                    @foreach ($errors->all() as $error)
-                                        <li>{{ $error }}</li>
-                                    @endforeach
-                                </ul>
-                            </div>
-                        @endif
-                        <form action="{{ route('students.store') }}" method="POST" class="contact-form-items row">
-                            @csrf
-                            <div class="col-sm-6">
-                                <div class="input-group">
-                                    <span class="input-group-text"><i class="ph-user"></i></span>
-                                    <input type="text" class="form-control" name="student_full_name" placeholder="Full Name" required>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="input-group">
-                                    <span class="input-group-text"><i class="ph-envelope-simple-open"></i></span>
-                                    <input type="email" class="form-control" name="student_email" placeholder="Email Address" required>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="input-group">
-                                    <span class="input-group-text"><i class="ph-phone"></i></span>
-                                    <input type="text" class="form-control" name="student_phone" placeholder="Phone Number" required>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="input-group">
-                                    <span class="input-group-text"><i class="ph-map-pin"></i></span>
-                                    <input type="text" class="form-control" name="student_address" placeholder="Address" required>
-                                </div>
-                            </div>
-                            <div class="w-100 contact-form-button">
-                                <button type="submit" class="btn btn-large d-block w-100">Book Your Slot</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
     <script src="{{ asset('vendor/jQuery/jquery.min.js') }}"></script>
     <script src="{{ asset('vendor/bootstrap/bootstrap.bundle.min.js') }}"></script>
     <script src="{{ asset('vendor/prism/prism.js') }}"></script>
@@ -1009,11 +932,4 @@
     <script src="{{ asset('vendor/scrollit/scrollit.min.js') }}"></script>
     <script src="{{ asset('vendor/magnific-popup/magnific-popup.min.js') }}"></script>
     <script src="{{ asset('js/script.js') }}"></script>
-    <script>
-    @if ($errors->any())
-        $(document).ready(function(){
-            $('#createAccount').modal('show');
-        });
-    @endif
-</script>
 </body>

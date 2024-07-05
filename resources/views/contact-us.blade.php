@@ -73,66 +73,62 @@
     </div>
   </nav>
 </header>
-
 <section class="contact" data-aos="fade-up" data-aos-once="true" data-aos-duration="1000">
   <div class="container">
     <div class="row">
       <div class="col-lg-7 col-md-10 mx-auto">
         <div class="contact-title text-center">
           <h1>Get In Touch</h1>
-          <p>We're happy you're here!,Whether you have a specific question, require a detailed consultation, 
-            or simply want to explore the possibilities, our team is eager to connect with you.</p>
+          <p>We're happy you're here! Whether you have a specific question, require a detailed consultation, or simply want to explore the possibilities, our team is eager to connect with you.</p>
         </div>
       </div>
     </div>
     <div class="row">
       <div class="col-12">
         <div class="contact-form">
-        <div class="contact-form-layout">
-        <h4>Send Message</h4>
-        @if (session('success'))
-            <div class="alert alert-success">
-                {{ session('success') }}
-            </div>
-        @endif
-
-        @if ($errors->any())
-            <div class="alert alert-danger">
-                <ul>
-                    @foreach ($errors->all() as $error)
-                        <li>{{ $error }}</li>
-                    @endforeach
-                </ul>
-            </div>
-        @endif
-
-        <form action="{{ route('contact.store') }}" method="POST" class="contact-form-items">
-            @csrf
-            <div class="input-group">
-                <span class="input-group-text">
-                    <i class="ph-user"></i>
-                </span>
-                <input type="text" name="full_name" class="form-control" placeholder="Full Name" required>
-            </div>
-            <div class="input-group">
-                <span class="input-group-text">
-                    <i class="ph-envelope-simple-open"></i>
-                </span>
-                <input type="email" name="email" class="form-control" placeholder="Email Address" required>
-            </div>
-            <div class="input-group">
-                <span class="input-group-text">
-                    <i class="ph-phone"></i>
-                </span>
-                <input type="text" name="phone" class="form-control" placeholder="Phone Number" required>
-            </div>
-            <div class="input-group">
-                <textarea name="message" class="form-control" placeholder="Message" rows="15" cols="20" required></textarea>
-            </div>
-            <div class="w-100 contact-form-button">
-                <button type="submit" class="btn btn-large">Send Message</button>
-            </div>
-        </form>
+          <div class="contact-form-layout">
+            <h4>Send Message</h4>
+            @if (session('success'))
+                <div class="alert alert-success">
+                    {{ session('success') }}
+                </div>
+            @endif
+            @if ($errors->any())
+                <div class="alert alert-danger">
+                    <ul>
+                        @foreach ($errors->all() as $error)
+                            <li>{{ $error }}</li>
+                        @endforeach
+                    </ul>
+                </div>
+            @endif
+            <form action="{{ route('contact.store') }}" method="POST" class="contact-form-items">
+                @csrf
+                <div class="input-group">
+                    <span class="input-group-text">
+                        <i class="ph-user"></i>
+                    </span>
+                    <input type="text" name="full_name" class="form-control" placeholder="Full Name" required>
+                </div>
+                <div class="input-group">
+                    <span class="input-group-text">
+                        <i class="ph-envelope-simple-open"></i>
+                    </span>
+                    <input type="email" name="email" class="form-control" placeholder="Email Address" required>
+                </div>
+                <div class="input-group">
+                    <span class="input-group-text">
+                        <i class="ph-phone"></i>
+                    </span>
+                    <input type="text" name="phone" class="form-control" placeholder="Phone Number" required>
+                </div>
+                <div class="input-group">
+                    <textarea name="message" class="form-control" placeholder="Message" rows="15" cols="20" required></textarea>
+                </div>
+                <div class="w-100 contact-form-button">
+                    <button type="submit" class="btn btn-large">Send Message</button>
+                </div>
+            </form>
           </div>
 
           <div class="contact-form-address">
@@ -152,144 +148,59 @@
               <span>sabeltdrw@gmail.com</span>
             </a>
             <div class="contact-social">
-              <h6>Socila Links</h6> <ul class="list-unstyled list-inline">
-                  <li class="list-inline-item">
-                    <a href="https://web.facebook.com/profile.php?id=61558816670684">
-                      <svg
-                        width="30"
-                        height="30"
-                        viewBox="0 0 30 30"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M15 26.25C21.2132 26.25 26.25 21.2132 26.25 15C26.25 8.7868 21.2132 3.75 15 3.75C8.7868 3.75 3.75 8.7868 3.75 15C3.75 21.2132 8.7868 26.25 15 26.25Z"
-                          stroke="#417086"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                        <path
-                          d="M19.6875 10.3125H17.8125C17.0666 10.3125 16.3512 10.6088 15.8238 11.1363C15.2963 11.6637 15 12.3791 15 13.125V26.25"
-                          stroke="#417086"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                        <path
-                          d="M11.25 16.875H18.75"
-                          stroke="#417086"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="list-inline-item">
-                    <a href="https://twitter.com/sabeltdrw">
-                      <svg
-                        width="30"
-                        height="30"
-                        viewBox="0 0 30 30"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M15.0001 10.3128C15.0002 9.23584 15.3712 8.19171 16.0505 7.35601C16.7299 6.5203 17.6762 5.94397 18.7305 5.72391C19.7848 5.50386 20.8827 5.6535 21.8396 6.14767C22.7966 6.64185 23.5542 7.45042 23.9851 8.43746L28.1251 8.4375L24.3444 12.2183C24.0982 16.021 22.414 19.5875 19.6338 22.1935C16.8536 24.7996 13.1858 26.2499 9.37514 26.25C5.62514 26.25 4.68764 24.8438 4.68764 24.8438C4.68764 24.8438 8.43764 23.4375 10.3126 20.625C10.3126 20.625 2.81264 16.875 4.68764 6.5625C4.68764 6.5625 9.37514 11.25 14.9985 12.1875L15.0001 10.3128Z"
-                          stroke="#417086"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="list-inline-item">
-                    <a href="https://www.instagram.com/sabeltdrw/?next=%2F&hl=en">
-                      <svg
-                        width="30"
-                        height="30"
-                        viewBox="0 0 30 30"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M15 19.6875C17.5888 19.6875 19.6875 17.5888 19.6875 15C19.6875 12.4112 17.5888 10.3125 15 10.3125C12.4112 10.3125 10.3125 12.4112 10.3125 15C10.3125 17.5888 12.4112 19.6875 15 19.6875Z"
-                          stroke="#417086"
-                          stroke-width="2"
-                          stroke-miterlimit="10"
-                        />
-                        <path
-                          d="M20.1562 4.21875H9.84375C6.73715 4.21875 4.21875 6.73715 4.21875 9.84375V20.1562C4.21875 23.2629 6.73715 25.7812 9.84375 25.7812H20.1562C23.2629 25.7812 25.7812 23.2629 25.7812 20.1562V9.84375C25.7812 6.73715 23.2629 4.21875 20.1562 4.21875Z"
-                          stroke="#417086"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                        <path
-                          d="M21.0938 10.3125C21.8704 10.3125 22.5 9.6829 22.5 8.90625C22.5 8.1296 21.8704 7.5 21.0938 7.5C20.3171 7.5 19.6875 8.1296 19.6875 8.90625C19.6875 9.6829 20.3171 10.3125 21.0938 10.3125Z"
-                          fill="#417086"
-                        />
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="list-inline-item">
-                    <a href="https://www.linkedin.com/in/sabe-ltd-bab9a2304/">
-                      <svg
-                        width="30"
-                        height="30"
-                        viewBox="0 0 30 30"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M24.8438 4.21875H5.15625C4.63848 4.21875 4.21875 4.63848 4.21875 5.15625V24.8438C4.21875 25.3615 4.63848 25.7812 5.15625 25.7812H24.8438C25.3615 25.7812 25.7812 25.3615 25.7812 24.8438V5.15625C25.7812 4.63848 25.3615 4.21875 24.8438 4.21875Z"
-                          stroke="#417086"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                        <path
-                          d="M14.0625 13.125V20.625"
-                          stroke="#417086"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                        <path
-                          d="M10.3125 13.125V20.625"
-                          stroke="#417086"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                        <path
-                          d="M14.0625 16.4063C14.0625 15.536 14.4082 14.7014 15.0236 14.0861C15.6389 13.4707 16.4735 13.125 17.3438 13.125C18.214 13.125 19.0486 13.4707 19.6639 14.0861C20.2793 14.7014 20.625 15.536 20.625 16.4063V20.625"
-                          stroke="#417086"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                        <path
-                          d="M10.3125 10.7812C11.0892 10.7812 11.7188 10.1517 11.7188 9.375C11.7188 8.59835 11.0892 7.96875 10.3125 7.96875C9.53585 7.96875 8.90625 8.59835 8.90625 9.375C8.90625 10.1517 9.53585 10.7812 10.3125 10.7812Z"
-                          fill="#417086"
-                        />
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="list-inline-item">
-                    <a href="https://www.tiktok.com/@sabeltd?lang=en">
+              <h6>Social Links</h6>
+              <ul class="list-unstyled list-inline">
+                <li class="list-inline-item">
+                  <a href="https://web.facebook.com/profile.php?id=61558816670684">
+                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M15 26.25C21.2132 26.25 26.25 21.2132 26.25 15C26.25 8.7868 21.2132 3.75 15 3.75C8.7868 3.75 3.75 8.7868 3.75 15C3.75 21.2132 8.7868 26.25 15 26.25Z" stroke="#417086" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M19.6875 10.3125H17.8125C17.0666 10.3125 16.3512 10.6088 15.8238 11.1363C15.2963 11.6637 15 12.3791 15 13.125V26.25" stroke="#417086" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M11.25 16.875H18.75" stroke="#417086" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://twitter.com/sabeltdrw">
+                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M15.0001 10.3128C15.0002 9.23584 15.3712 8.19171 16.0505 7.35601C16.7299 6.5203 17.6762 5.94397 18.7305 5.72391C19.7848 5.50386 20.8827 5.6535 21.8396 6.14767C22.7966 6.64185 23.5542 7.45042 23.9851 8.43746L28.1251 8.4375L24.3444 12.2183C24.0982 16.021 22.414 19.5875 19.6338 22.1935C16.8536 24.7996 13.1858 26.2499 9.37514 26.25C5.62514 26.25 4.68764 24.8438 4.68764 24.8438C4.68764 24.8438 8.43764 23.4375 10.3126 20.625C10.3126 20.625 2.81264 16.875 4.68764 6.5625C4.68764 6.5625 9.37514 11.25 14.9985 12.1875L15.0001 10.3128Z" stroke="#417086" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://www.instagram.com/sabeltdrw/?next=%2F&hl=en">
+                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M15 19.6875C17.5888 19.6875 19.6875 17.5888 19.6875 15C19.6875 12.4112 17.5888 10.3125 15 10.3125C12.4112 10.3125 10.3125 12.4112 10.3125 15C10.3125 17.5888 12.4112 19.6875 15 19.6875Z" stroke="#417086" stroke-width="2" stroke-miterlimit="10"/>
+                      <path d="M20.1562 4.21875H9.84375C6.73715 4.21875 4.21875 6.73715 4.21875 9.84375V20.1562C4.21875 23.2629 6.73715 25.7812 9.84375 25.7812H20.1562C23.2629 25.7812 25.7812 23.2629 25.7812 20.1562V9.84375C25.7812 6.73715 23.2629 4.21875 20.1562 4.21875Z" stroke="#417086" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M21.0938 10.3125C21.8704 10.3125 22.5 9.6829 22.5 8.90625C22.5 8.1296 21.8704 7.5 21.0938 7.5C20.3171 7.5 19.6875 8.1296 19.6875 8.90625C19.6875 9.6829 20.3171 10.3125 21.0938 10.3125Z" fill="#417086"/>
+                    </svg>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://www.linkedin.com/in/sabe-ltd-bab9a2304/">
+                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M24.8438 4.21875H5.15625C4.63848 4.21875 4.21875 4.63848 4.21875 5.15625V24.8438C4.21875 25.3615 4.63848 25.7812 5.15625 25.7812H24.8438C25.3615 25.7812 25.7812 25.3615 25.7812 24.8438V5.15625C25.7812 4.63848 25.3615 4.21875 24.8438 4.21875Z" stroke="#417086" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M14.0625 13.125V20.625" stroke="#417086" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M10.3125 13.125V20.625" stroke="#417086" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M14.0625 16.4063C14.0625 15.536 14.4082 14.7014 15.0236 14.0861C15.6389 13.4707 16.4735 13.125 17.3438 13.125C18.214 13.125 19.0486 13.4707 19.6639 14.0861C20.2793 14.7014 20.625 15.536 20.625 16.4063V20.625" stroke="#417086" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M10.3125 10.7812C11.0892 10.7812 11.7188 10.1517 11.7188 9.375C11.7188 8.59835 11.0892 7.96875 10.3125 7.96875C9.53585 7.96875 8.90625 8.59835 8.90625 9.375C8.90625 10.1517 9.53585 10.7812 10.3125 10.7812Z" fill="#417086"/>
+                    </svg>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://www.tiktok.com/@sabeltd?lang=en">
                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#417086" class="bi bi-tiktok" viewBox="0 0 16 16">
-                    <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z"/>
-                     </svg>
-                    
-                    </a>
-                  </li>
-                </ul>
-              
+                      <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z"/>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
+        </div>
+
+        <!-- Google Maps Embed Code -->
+        <div class="contact-map mt-5">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31899.906734897402!2d30.06225569346336!3d-1.9582050327505218!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19dca5dee9a96a75%3A0xdaf0046d6467fcae!2sSHEMA%20House!5e0!3m2!1sen!2srw!4v1720176101289!5m2!1sen!2srw" width="1200" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </div>
     </div>

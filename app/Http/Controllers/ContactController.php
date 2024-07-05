@@ -1,5 +1,4 @@
 <?php
-
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
@@ -11,12 +10,15 @@ class ContactController extends Controller
 {
     public function store(Request $request)
     {
-        // Validate the request
+        // Validate the request with custom rules and messages
         $request->validate([
             'full_name' => 'required|string|max:255',
-            'email' => 'required|email|max:255',
-            'phone' => 'required|string|max:15',
+            'email' => ['required', 'email', 'max:255', 'regex:/^[\w\.-]+@[a-zA-Z\d\.-]+\.[a-zA-Z]{2,6}$/'],
+            'phone' => ['required', 'regex:/^[0-9]{10}$/'],
             'message' => 'required|string',
+        ], [
+            'email.regex' => 'The email address must be a valid format.',
+            'phone.regex' => 'The phone number must be exactly 10 digits.',
         ]);
 
         // Create a new contact message

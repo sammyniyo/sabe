@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Twinmotion - Our Softwares Courses | SABE Ltd</title>
+    <title>Twin Motion - Our Softwares Courses | SABE Ltd</title>
     <link rel="stylesheet" href="{{ asset('vendor/bootstrap/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ asset('vendor/prism/prism.css') }}">
     <link rel="stylesheet" href="{{ asset('vendor/phosphor-icons/css/icons.css') }}">
@@ -29,7 +29,7 @@
                     <circle cx="3" cy="3.5" r="3" fill="#417086"/>
                 </svg>
                 <i class="ph-phone-bold"></i>
-                  +250 788 896 603     
+                +250 794 423 156     
         </a>
       </div>
       <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -76,37 +76,23 @@
 
 
 <section class="property-details" id="property-details">
+  <!-- Button trigger modal -->
+  <div class="property-details-bottom-bar d-lg-none d-block position-fixed">
+    <button type="button" class="btn btn-large" data-bs-toggle="modal" data-bs-target="#requestVisit">
+      Register Now
+    </button>
+  </div>
+
   <div class="container">
     <div class="row">
       <div class="col-lg-8">
-        <div class="property-details-content">
-          <div class="property-details-content-title">
-            <h4>Twinmotion</h4>
-          </div>
-          <div class="property-details-content-details">
-            <p>Twinmotion is a real-time 3D immersion software designed for architecture, construction, urban planning, and landscaping professionals. It allows users to create high-quality visualizations and immersive experiences.</p>
-            <p class="bold">
-              Course Content
-            </p>
-            <p>
-            1. Introduction to Twinmotion and its interface<br>
-            2. Importing models from other CAD software<br>
-            3. Applying and customizing materials and textures<br>
-            4. Setting up lighting, weather, and environment settings<br>
-            5. Creating and managing vegetation and landscape elements<br>
-            6. Adding characters, vehicles, and objects to scenes<br>
-            7. Real-time rendering techniques<br>
-            8. Creating animations and walkthroughs<br>
-            9. Hands-on Projects 
-            </p>
-          </div>
+      <div class="blog-single-featured-thumb">
+          <img src="images/courses/twinmotion.jpg" alt="Twin Motion" >
         </div>
-      
       </div>
       <div class="col-lg-4">
         <div class="property-details-form d-none d-lg-block">
-          
-        <h4>Register Now</h4>
+          <h4>Register Now</h4>
           @if (session('success'))
                             <div class="alert alert-success">
                                 {{ session('success') }}
@@ -126,7 +112,7 @@
                                 </ul>
                             </div>
                         @endif
-          <form  action="{{ route('students.store') }}" method="POST" class="contact-form-items">
+          <form action="{{ route('students.store') }}" method="POST" class="contact-form-items">
             @csrf
             <div class="input-group">
               <span class="input-group-text" >
@@ -157,10 +143,36 @@
             </div>
           </form>
         </div>
+    </div>
+    
+    <div class="row">
+      <div class="col-lg-8">
+        <div class="property-details-content">
+          <div class="property-details-content-title">
+            <h4>Twinmotion</h4>
+          </div>
+          <div class="property-details-content-details">
+            <p>Twinmotion is a real-time 3D immersion software designed for architecture, construction, urban planning, and landscaping professionals. It allows users to create high-quality visualizations and immersive experiences.</p>
+            <p class="bold">
+              Course Content
+            </p>
+            <p>
+            1. Introduction to Twinmotion and its interface<br>
+            2. Importing models from other CAD software<br>
+            3. Applying and customizing materials and textures<br>
+            4. Setting up lighting, weather, and environment settings<br>
+            5. Creating and managing vegetation and landscape elements<br>
+            6. Adding characters, vehicles, and objects to scenes<br>
+            7. Real-time rendering techniques<br>
+            8. Creating animations and walkthroughs<br>
+            9. Hands-on Projects 
+            </p>
+          </div>
+          </div>
+      </div>
       </div>
     </div>
 </section>
-
     <!--For Desktops -->
     <section class="footer d-none d-xl-block">
       <div class="container-fluid footer-container">
@@ -335,9 +347,6 @@
               <h5>Other Pages</h5>
               <ul class="list-unstyled">
                 <li><a href="{{ url('/software-training') }}" class="footer-link">Software Training</a></li>
-                <li>
-                  <a href="{{ url('/register') }}" class="footer-link">Register Now</a>
-                </li>
                 <li>
                   <a href="{{ url('/privacy-policy') }}" class="footer-link">Privacy Policy</a>
                 </li>
@@ -554,9 +563,6 @@
                <ul class="list-unstyled">
                 <li><a href="{{ url('/software-training') }}" class="footer-link">Software Training</a></li>
                 <li>
-                  <a href="{{ url('/register') }}" class="footer-link">Register Now</a>
-                </li>
-                <li>
                   <a href="{{ url('/privacy-policy') }}" class="footer-link">Privacy Policy</a>
                 </li>
               </ul>
@@ -598,9 +604,6 @@
                 <h5>Other Pages</h5>
                <ul class="list-unstyled">
                 <li><a href="{{ url('/software-training') }}" class="footer-link">Software Training</a></li>
-                <li>
-                  <a href="{{ url('/register') }}" class="footer-link">Register Now</a>
-                </li>
                 <li>
                   <a href="{{ url('/privacy-policy') }}" class="footer-link">Privacy Policy</a>
                 </li>
@@ -785,7 +788,83 @@
         SABE Ltd ©<span class="newYearMobile"></span>
       </p>
     </section>
+    <!-- Modal -->
+<div class="modal fade requestVisit" id="requestVisit" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4>Request for Visit</h4>
+        <button type="button" class="btn-modal-close" data-bs-dismiss="modal" aria-label="Close">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z" stroke="#1C4456" stroke-width="2.3" stroke-miterlimit="10"></path>
+              <path d="M15 9L9 15" stroke="#1C4456" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"></path>
+              <path d="M15 15L9 9" stroke="#1C4456" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="container-fluid">
+          <div class="modal-property-details-form">
 
+            <!-- Success and Error Messages -->
+            @if (session('success'))
+                <div class="alert alert-success">
+                    {{ session('success') }}
+                </div>
+            @endif
+
+            @if (session('error'))
+                <div class="alert alert-danger">
+                    {{ session('error') }}
+                </div>
+            @endif
+
+            @if ($errors->any())
+                <div class="alert alert-danger">
+                    <ul>
+                        @foreach ($errors->all() as $error)
+                            <li>{{ $error }}</li>
+                        @endforeach
+                    </ul>
+                </div>
+            @endif
+
+            <form action="{{ route('students.store') }}" method="POST" class="contact-form-items row">
+              @csrf
+              <div class="col-sm-6">
+                <div class="input-group">
+                  <span class="input-group-text"><i class="ph-user"></i></span>
+                  <input type="text" class="form-control" name="student_full_name" placeholder="Full Name" required>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="input-group">
+                  <span class="input-group-text"><i class="ph-envelope-simple-open"></i></span>
+                  <input type="email" class="form-control" name="student_email" placeholder="Email Address" required>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="input-group">
+                  <span class="input-group-text"><i class="ph-phone"></i></span>
+                  <input type="text" class="form-control" name="student_phone" placeholder="Phone Number" required>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="input-group">
+                  <span class="input-group-text"><i class="ph-map-pin"></i></span>
+                  <input type="text" class="form-control" name="student_address" placeholder="Address" required>
+                </div>
+              </div>
+              <div class="w-100 contact-form-button">
+                <button type="submit" class="btn btn-large d-block w-100">Register</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
     <script src="{{ asset('vendor/jQuery/jquery.min.js') }}"></script>
     <script src="{{ asset('vendor/bootstrap/bootstrap.bundle.min.js') }}"></script>
     <script src="{{ asset('vendor/prism/prism.js') }}"></script>
@@ -797,11 +876,5 @@
     <script src="{{ asset('vendor/scrollit/scrollit.min.js') }}"></script>
     <script src="{{ asset('vendor/magnific-popup/magnific-popup.min.js') }}"></script>
     <script src="{{ asset('js/script.js') }}"></script>
-    <script>
-    @if ($errors->any())
-        $(document).ready(function(){
-            $('#createAccount').modal('show');
-        });
-    @endif
-</script>
 </body>
+</html>

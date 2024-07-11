@@ -24,13 +24,6 @@
         <a class="navbar-brand" href="{{ url('/') }}">
         <img src="images/logo.png" alt="logo" height="50" width="50">
         </a>
-        <a href="tel:+250788896603" class="navbar-number align-items-center">
-                <svg width="6" height="7" viewBox="0 0 6 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="3" cy="3.5" r="3" fill="#417086"/>
-                </svg>
-                <i class="ph-phone-bold"></i>
-                  +250 788 896 603     
-        </a>
       </div>
       <div class=" d-none d-sm-flex align-items-center ms-auto ms-lg-0 order-lg-last">
         <a class="btn btn-small btn-outline d-none d-lg-inline-block" data-bs-toggle="modal" href="#createAccount" role="button">Book Your Slot</a>
@@ -198,7 +191,6 @@ health standards before distribution.</p>
     </div>
   </div>
 </section>
-
     <!--For Desktops -->
     <section class="footer d-none d-xl-block">
       <div class="container-fluid footer-container">
@@ -373,9 +365,6 @@ health standards before distribution.</p>
               <h5>Other Pages</h5>
               <ul class="list-unstyled">
                 <li><a href="{{ url('/software-training') }}" class="footer-link">Software Training</a></li>
-                <li>
-                  <a href="{{ url('/register') }}" class="footer-link">Register Now</a>
-                </li>
                 <li>
                   <a href="{{ url('/privacy-policy') }}" class="footer-link">Privacy Policy</a>
                 </li>
@@ -592,9 +581,6 @@ health standards before distribution.</p>
                <ul class="list-unstyled">
                 <li><a href="{{ url('/software-training') }}" class="footer-link">Software Training</a></li>
                 <li>
-                  <a href="{{ url('/register') }}" class="footer-link">Register Now</a>
-                </li>
-                <li>
                   <a href="{{ url('/privacy-policy') }}" class="footer-link">Privacy Policy</a>
                 </li>
               </ul>
@@ -636,9 +622,6 @@ health standards before distribution.</p>
                 <h5>Other Pages</h5>
                <ul class="list-unstyled">
                 <li><a href="{{ url('/software-training') }}" class="footer-link">Software Training</a></li>
-                <li>
-                  <a href="{{ url('/register') }}" class="footer-link">Register Now</a>
-                </li>
                 <li>
                   <a href="{{ url('/privacy-policy') }}" class="footer-link">Privacy Policy</a>
                 </li>
@@ -823,10 +806,9 @@ health standards before distribution.</p>
         SABE Ltd ©<span class="newYearMobile"></span>
       </p>
     </section>
-
   
     <!-- Modal Create Account -->
-<div class="modal fade modal-createAccount" id="createAccount" tabindex="-2" aria-labelledby="createAccountLabel" aria-hidden="true">
+<div class="modal fade modal-createAccount" id="createAccount" aria-labelledby="createAccountLabel">
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
             <div class="modal-header">
@@ -842,8 +824,8 @@ health standards before distribution.</p>
             <div class="modal-body">
                 <div class="container-fluid">
                     <div class="modal-property-details-form">
-                      <!-- Include this in your main layout or the specific view -->
-@if (session('success'))
+                        
+                    @if (session('success'))
     <div class="alert alert-success">
         {{ session('success') }}
     </div>
@@ -865,37 +847,36 @@ health standards before distribution.</p>
     </div>
 @endif
 
-                        <form action="{{ route('students.store') }}" method="POST" class="contact-form-items row">
-                            @csrf
-
-                            <div class="col-sm-6">
-                                <div class="input-group">
-                                    <span class="input-group-text"><i class="ph-user"></i></span>
-                                    <input type="text" class="form-control" name="full_name" placeholder="Full Name" required>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="input-group">
-                                    <span class="input-group-text"><i class="ph-envelope-simple-open"></i></span>
-                                    <input type="email" class="form-control" name="email" placeholder="Email Address" required>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="input-group">
-                                    <span class="input-group-text"><i class="ph-phone"></i></span>
-                                    <input type="text" class="form-control" name="phone" placeholder="Phone Number" required>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="input-group">
-                                    <span class="input-group-text"><i class="ph-map-pin"></i></span>
-                                    <input type="text" class="form-control" name="address" placeholder="Address" required>
-                                </div>
-                            </div>
-                            <div class="w-100 contact-form-button">
-                                <button type="submit" class="btn btn-large d-block w-100">Book Your Slot</button>
-                            </div>
-                        </form>
+<form action="{{ route('students.store') }}" method="POST" class="contact-form-items row">
+    @csrf
+    <div class="col-sm-6">
+        <div class="input-group">
+            <span class="input-group-text"><i class="ph-user"></i></span>
+            <input type="text" class="form-control" name="student_full_name" placeholder="Full Name" required>
+        </div>
+    </div>
+    <div class="col-sm-6">
+        <div class="input-group">
+            <span class="input-group-text"><i class="ph-envelope-simple-open"></i></span>
+            <input type="email" class="form-control" name="student_email" placeholder="Email Address" required>
+        </div>
+    </div>
+    <div class="col-sm-6">
+        <div class="input-group">
+            <span class="input-group-text"><i class="ph-phone"></i></span>
+            <input type="text" class="form-control" name="student_phone" placeholder="Phone Number" required>
+        </div>
+    </div>
+    <div class="col-sm-6">
+        <div class="input-group">
+            <span class="input-group-text"><i class="ph-map-pin"></i></span>
+            <input type="text" class="form-control" name="student_address" placeholder="Address" required>
+        </div>
+    </div>
+    <div class="w-100 contact-form-button">
+        <button type="submit" class="btn btn-large d-block w-100">Book Your Slot</button>
+    </div>
+</form>
                     </div>
                 </div>
             </div>
@@ -914,11 +895,5 @@ health standards before distribution.</p>
     <script src="{{ asset('vendor/scrollit/scrollit.min.js') }}"></script>
     <script src="{{ asset('vendor/magnific-popup/magnific-popup.min.js') }}"></script>
     <script src="{{ asset('js/script.js') }}"></script>
-    <script>
-    @if ($errors->any())
-        $(document).ready(function(){
-            $('#createAccount').modal('show');
-        });
-    @endif
-</script>
 </body>
+</html>

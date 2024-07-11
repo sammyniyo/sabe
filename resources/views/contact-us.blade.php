@@ -15,6 +15,32 @@
      <!-- Custom CSS -->
     <link rel="shortcut icon" href="{{ asset('images/favicon.ico') }}" type="image/x-icon">
     <link rel="icon" href="{{ asset('images/favicon.png') }}" type="image/x-icon">
+    <style>
+      .map-container {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    overflow: hidden;
+}
+
+.map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* Adjust for mobile screens */
+@media (max-width: 768px) {
+    .map-container {
+        padding-bottom: 75%; /* Adjust aspect ratio for mobile if needed */
+    }
+}
+
+    </style>
 </head>
 <body>
 <header><nav class="navbar navbar-expand-lg navbar-white" id="navigationBar">
@@ -200,13 +226,16 @@
 
         <!-- Google Maps Embed Code -->
         <div class="contact-map mt-5">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31899.906734897402!2d30.06225569346336!3d-1.9582050327505218!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19dca5dee9a96a75%3A0xdaf0046d6467fcae!2sSHEMA%20House!5e0!3m2!1sen!2srw!4v1720176101289!5m2!1sen!2srw" width="1200" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
+    <div class="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31899.906734897402!2d30.06225569346336!3d-1.9582050327505218!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19dca5dee9a96a75%3A0xdaf0046d6467fcae!2sSHEMA%20House!5e0!3m2!1sen!2srw!4v1720176101289!5m2!1sen!2srw" 
+                style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</div>
+
       </div>
     </div>
   </div>
 </section>
-
     <!--For Desktops -->
     <section class="footer d-none d-xl-block">
       <div class="container-fluid footer-container">
@@ -381,9 +410,6 @@
               <h5>Other Pages</h5>
               <ul class="list-unstyled">
                 <li><a href="{{ url('/software-training') }}" class="footer-link">Software Training</a></li>
-                <li>
-                  <a href="{{ url('/register') }}" class="footer-link">Register Now</a>
-                </li>
                 <li>
                   <a href="{{ url('/privacy-policy') }}" class="footer-link">Privacy Policy</a>
                 </li>
@@ -600,9 +626,6 @@
                <ul class="list-unstyled">
                 <li><a href="{{ url('/software-training') }}" class="footer-link">Software Training</a></li>
                 <li>
-                  <a href="{{ url('/register') }}" class="footer-link">Register Now</a>
-                </li>
-                <li>
                   <a href="{{ url('/privacy-policy') }}" class="footer-link">Privacy Policy</a>
                 </li>
               </ul>
@@ -644,9 +667,6 @@
                 <h5>Other Pages</h5>
                <ul class="list-unstyled">
                 <li><a href="{{ url('/software-training') }}" class="footer-link">Software Training</a></li>
-                <li>
-                  <a href="{{ url('/register') }}" class="footer-link">Register Now</a>
-                </li>
                 <li>
                   <a href="{{ url('/privacy-policy') }}" class="footer-link">Privacy Policy</a>
                 </li>

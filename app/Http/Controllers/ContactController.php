@@ -1,10 +1,12 @@
 <?php
+
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Contact;
 use Illuminate\Support\Facades\Mail;
 use App\Mail\ContactMail;
+use App\Mail\ThankYouMail;
 
 class ContactController extends Controller
 {
@@ -29,9 +31,12 @@ class ContactController extends Controller
             'message' => $request->message,
         ]);
 
-        // Send an email notification
+        // Send an email notification to the admin
         Mail::to('sabeltdrw@gmail.com')->send(new ContactMail($contact));
 
-        return redirect()->back()->with('success', 'Message sent successfully!');
+        // Send a thank you email to the user
+        Mail::to($contact->email)->send(new ThankYouMail($contact));
+
+        return redirect()->back()->with('success', 'Message sent successfully! Thank you for contacting us.');
     }
 }

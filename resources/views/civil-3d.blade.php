@@ -29,7 +29,7 @@
                     <circle cx="3" cy="3.5" r="3" fill="#417086"/>
                 </svg>
                 <i class="ph-phone-bold"></i>
-                  +250 788 896 603     
+                +250 794 423 156     
         </a>
       </div>
       <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -76,37 +76,23 @@
 
 
 <section class="property-details" id="property-details">
+  <!-- Button trigger modal -->
+  <div class="property-details-bottom-bar d-lg-none d-block position-fixed">
+    <button type="button" class="btn btn-large" data-bs-toggle="modal" data-bs-target="#requestVisit">
+      Register Now
+    </button>
+  </div>
+
   <div class="container">
     <div class="row">
       <div class="col-lg-8">
-        <div class="property-details-content">
-          <div class="property-details-content-title">
-            <h4>Civil 3d</h4>
-          </div>
-          <div class="property-details-content-details">
-            <p>Civil 3D is a design and documentation software for civil engineering. It supports BIM with integrated features to improve drafting, design, and construction documentation.</p>
-            <p class="bold">
-              Course Content
-            </p>
-            <p>
-            1. Introduction to Civil 3D and its interface <br>
-            2. Survey data import and management <br>
-            3. Surface creation and analysis<br>
-            4. Alignment and profile design<br>
-            5. Corridor modeling<br>
-            6. Pipe network design <br>
-            7. Grading and earthwork calculation <br>
-            8. Quantity takeoff and documentation<br>
-            9. Project collaboration and management
-            </p>
-          </div>
+      <div class="blog-single-featured-thumb">
+          <img src="images/courses/civil3d.jpg" alt="Civil 3d" >
         </div>
-      
       </div>
       <div class="col-lg-4">
         <div class="property-details-form d-none d-lg-block">
-
-        <h4>Register Now</h4>
+          <h4>Register Now</h4>
           @if (session('success'))
                             <div class="alert alert-success">
                                 {{ session('success') }}
@@ -157,10 +143,37 @@
             </div>
           </form>
         </div>
+    </div>
+    
+    <div class="row">
+      <div class="col-lg-8">
+        <div class="property-details-content">
+         <div class="property-details-content-title">
+            <h4>Civil 3d</h4>
+          </div>
+          <div class="property-details-content-details">
+            <p>Civil 3D is a design and documentation software for civil engineering. It supports BIM with integrated features to improve drafting, design, and construction documentation.</p>
+            <p class="bold">
+              Course Content
+            </p>
+            <p>
+            1. Introduction to Civil 3D and its interface <br>
+            2. Survey data import and management <br>
+            3. Surface creation and analysis<br>
+            4. Alignment and profile design<br>
+            5. Corridor modeling<br>
+            6. Pipe network design <br>
+            7. Grading and earthwork calculation <br>
+            8. Quantity takeoff and documentation<br>
+            9. Project collaboration and management
+            </p>
+          </div>
+        </div>
+      
+      </div>
       </div>
     </div>
 </section>
-
     <!--For Desktops -->
     <section class="footer d-none d-xl-block">
       <div class="container-fluid footer-container">
@@ -335,9 +348,6 @@
               <h5>Other Pages</h5>
               <ul class="list-unstyled">
                 <li><a href="{{ url('/software-training') }}" class="footer-link">Software Training</a></li>
-                <li>
-                  <a href="{{ url('/register') }}" class="footer-link">Register Now</a>
-                </li>
                 <li>
                   <a href="{{ url('/privacy-policy') }}" class="footer-link">Privacy Policy</a>
                 </li>
@@ -554,9 +564,6 @@
                <ul class="list-unstyled">
                 <li><a href="{{ url('/software-training') }}" class="footer-link">Software Training</a></li>
                 <li>
-                  <a href="{{ url('/register') }}" class="footer-link">Register Now</a>
-                </li>
-                <li>
                   <a href="{{ url('/privacy-policy') }}" class="footer-link">Privacy Policy</a>
                 </li>
               </ul>
@@ -598,9 +605,6 @@
                 <h5>Other Pages</h5>
                <ul class="list-unstyled">
                 <li><a href="{{ url('/software-training') }}" class="footer-link">Software Training</a></li>
-                <li>
-                  <a href="{{ url('/register') }}" class="footer-link">Register Now</a>
-                </li>
                 <li>
                   <a href="{{ url('/privacy-policy') }}" class="footer-link">Privacy Policy</a>
                 </li>
@@ -785,9 +789,83 @@
         SABE Ltd ©<span class="newYearMobile"></span>
       </p>
     </section>
+    <!-- Modal -->
+<div class="modal fade requestVisit" id="requestVisit" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4>Request for Visit</h4>
+        <button type="button" class="btn-modal-close" data-bs-dismiss="modal" aria-label="Close">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z" stroke="#1C4456" stroke-width="2.3" stroke-miterlimit="10"></path>
+              <path d="M15 9L9 15" stroke="#1C4456" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"></path>
+              <path d="M15 15L9 9" stroke="#1C4456" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="container-fluid">
+          <div class="modal-property-details-form">
 
+            <!-- Success and Error Messages -->
+            @if (session('success'))
+                <div class="alert alert-success">
+                    {{ session('success') }}
+                </div>
+            @endif
 
+            @if (session('error'))
+                <div class="alert alert-danger">
+                    {{ session('error') }}
+                </div>
+            @endif
 
+            @if ($errors->any())
+                <div class="alert alert-danger">
+                    <ul>
+                        @foreach ($errors->all() as $error)
+                            <li>{{ $error }}</li>
+                        @endforeach
+                    </ul>
+                </div>
+            @endif
+
+            <form action="{{ route('students.store') }}" method="POST" class="contact-form-items row">
+              @csrf
+              <div class="col-sm-6">
+                <div class="input-group">
+                  <span class="input-group-text"><i class="ph-user"></i></span>
+                  <input type="text" class="form-control" name="student_full_name" placeholder="Full Name" required>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="input-group">
+                  <span class="input-group-text"><i class="ph-envelope-simple-open"></i></span>
+                  <input type="email" class="form-control" name="student_email" placeholder="Email Address" required>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="input-group">
+                  <span class="input-group-text"><i class="ph-phone"></i></span>
+                  <input type="text" class="form-control" name="student_phone" placeholder="Phone Number" required>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="input-group">
+                  <span class="input-group-text"><i class="ph-map-pin"></i></span>
+                  <input type="text" class="form-control" name="student_address" placeholder="Address" required>
+                </div>
+              </div>
+              <div class="w-100 contact-form-button">
+                <button type="submit" class="btn btn-large d-block w-100">Register</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
     <script src="{{ asset('vendor/jQuery/jquery.min.js') }}"></script>
     <script src="{{ asset('vendor/bootstrap/bootstrap.bundle.min.js') }}"></script>
     <script src="{{ asset('vendor/prism/prism.js') }}"></script>

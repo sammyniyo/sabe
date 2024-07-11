@@ -78,4 +78,8 @@ class PageController extends Controller
     {
         return view('twinmotion');
     }
+    public function privacyPolicy()
+    {
+        return view('privacy-policy');
+    }
 }

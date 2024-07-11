@@ -26,6 +26,7 @@ Route::get('/prokon', [PageController::class, 'prokon'])->name('prokon');
 Route::get('/sketchup', [PageController::class, 'sketchup'])->name('sketchup');
 Route::get('/tekra-structures', [PageController::class, 'tekraStructures'])->name('tekra-structures');
 Route::get('/twinmotion', [PageController::class, 'twinmotion'])->name('twinmotion');
+Route::get('/privacy-policy', [PageController::class, 'privacyPolicy'])->name('privacy-policy');
 
 // Student registration route
 Route::post('/students', [StudentController::class, 'store'])->name('students.store');

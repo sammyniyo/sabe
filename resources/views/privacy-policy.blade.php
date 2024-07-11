@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Softwares Courses | SABE Ltd</title>
+    <title>Privacy & Policy | SABE Ltd</title>
     <link rel="stylesheet" href="{{ asset('vendor/bootstrap/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ asset('vendor/prism/prism.css') }}">
     <link rel="stylesheet" href="{{ asset('vendor/phosphor-icons/css/icons.css') }}">
@@ -23,13 +23,6 @@
       <div class="d-flex align-items-center">
         <a class="navbar-brand" href="{{ url('/') }}">
         <img src="images/logo.png" alt="logo" height="50" width="50">
-        </a>
-        <a href="tel:+250788896603" class="navbar-number align-items-center">
-                <svg width="6" height="7" viewBox="0 0 6 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="3" cy="3.5" r="3" fill="#417086"/>
-                </svg>
-                <i class="ph-phone-bold"></i>
-                  +250 788 896 603     
         </a>
       </div>
       <div class=" d-none d-sm-flex align-items-center ms-auto ms-lg-0 order-lg-last">
@@ -80,313 +73,43 @@
   </nav>
 </header>
 
-<section class="about" data-aos="fade-up" data-aos-once="true" data-aos-duration="1000">
+<section class="privacy">
   <div class="container">
     <div class="row">
-      <div class="col-12 col-md-8 col-lg-7 mx-auto">
-        <div class="about-content text-center">
-          <h1>Our Courses</h1>
-          <p>We invest in your growth! Benefit from comprehensive training programs, including software training courses we offer to both new and existing employees. Stay ahead of the curve with opportunities to learn the latest industry trends and tools.</p>
+      <div class="privacy-content">
+        <h2>Privacy Policy</h2>
+        <p>Last updated: <span>July 2024 </span> </p>
+        <p>SABE Ltd. ("we," "us," or "our") respects the privacy of our website visitors ("you" or "your"). This Privacy Policy describes the types of information we collect on our website (https://sabe.rw/), how we use that information, and the choices you have associated with your information.</p>
+        <div class="privacy-rules">
+          <h5>Information We Collect:</h5>
+          <p><span>Personal Information:</span> This is information that can be used to identify you as an individual, such as your name, email address, phone number, and address. We may collect your  personal information from registration or contact us.</p>
+        </div>
+        <div class="privacy-rules">
+          <h5>Use of Information:</h5>
+          <p><span>Personal Information:</span> We use your personal information to respond to your inquiries, provide you with requested information, and send you our newsletter (if you subscribe). We may also use your personal information for internal marketing and research purposes.</p>
+          <p><span>Non-Personal Information:</span> We use non-personal information to improve the functionality of our website, understand how visitors use our website, and personalize your experience. We may also use non-personal information for advertising purposes.</p>
+        </div>
+        <div class="privacy-rules">
+          <h5>Sharing of Information:</h5>
+          <p>We will not share your personal information with third parties without your consent, except in the following limited circumstances:</p>
+          <p><span>- For marketing purposes:</span> We may share your personal information with third parties for marketing purposes, such as sending you our newsletter.</p>
+          <p><span>- For internal research purposes:</span> We may share your personal information with third parties for internal research purposes.</p>
+          <p><span>- With your consent:</span> We may share your personal information with third parties with your consent.</p>
+          <p></p>
+        </div>
+        <div class="privacy-rules">
+          <h5>Data Security:</h5>
+          <p>We take reasonable steps to protect your information from unauthorized access, disclosure, alteration, or destruction. However, no website or internet transmission is completely secure. We cannot guarantee the security of your information.</p>
+        </div>
+        <div class="privacy-rules">
+          <h5>Changes to this Privacy Policy:</h5>
+          <p>We may update this Privacy Policy from time to time. We will post any changes to this Privacy Policy on our website. We encourage you to review this Privacy Policy periodically to stay informed of any updates.</p>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- 
-  #############
-  Company Page Section
-  #############
--->
-<section
-      class="properties"
-      data-aos="fade-up"
-      data-aos-once="true"
-      data-aos-duration="1000"
-    >
-      <div class="container">
-        <div class="grid row row-cols-xl-3 row-cols-md-2 g-4">
-          <div class="properties-card">
-            <div class="properties-card--thumb">
-              <img src="images/courses/etabs.png" alt="etabs"/>
-            </div>
-            <div class="properties-card--content">
-              <div
-                class="d-flex align-items-center properties-card--content--address"
-              >
-                <span>ETABS</span>
-              </div>
-              <div class="d-flex align-items-center properties-card--content--address">
-                  <span>ETABS is a structural analysis and design software used for building structures. It integrates various structural analysis and design processes to provide a comprehensive solution for the analysis and design of building systems.</span>
-              </div>
-              <div
-                class="properties-card--footer d-flex align-items-center justify-content-between"
-              >
-                <a href="{{ url('/etabs') }}" class="btn btn-small"
-                  >View Details</a
-                >
-              </div>
-            </div>
-          </div>
-
-          <div class="properties-card">
-            <div class="properties-card--thumb">
-              <img src="images/courses/autocad.jpg" alt="autocad" />
-            </div>
-            <div class="properties-card--content">
-              <div
-                class="d-flex align-items-center properties-card--content--address"
-              >
-                <span>AutoCAD</span>
-              </div>  
-              <div class="d-flex align-items-center properties-card--content--address">
-                <span>Develop a strong foundation in 2D and 3D drafting with AutoCAD, the industry leader. Learn to create precise technical drawings for architectural, engineering, and construction projects. (Course content may include: drawing tools, dimensioning,..)</span>
-            </div>           
-              <div
-                class="properties-card--footer d-flex align-items-center justify-content-between"
-              >
-                <a href="{{ url('/autocad') }}" class="btn btn-small"
-                  >View Details</a
-                >
-              </div>
-            </div>
-          </div>
-
-          <div class="properties-card">
-            <div class="properties-card--thumb">
-              <img src="images/courses/revit.jpg" alt="Autodesk Revit" />
-            </div>
-            <div class="properties-card--content">
-              <div
-                class="d-flex align-items-center properties-card--content--address"
-              >
-                <span>Autodesk Revit</span>
-              </div>
-              <div class="d-flex align-items-center properties-card--content--address">
-                <span>aster Building Information Modeling (BIM) with Revit, a powerful software for creating intelligent 3D models of buildings. Learn to design, document, and collaborate on projects with greater efficiency(modeling tools, parametric components,..).</span>
-            </div>
-              <div
-                class="properties-card--footer d-flex align-items-center justify-content-between"
-              >
-                <a href="{{ url('/autodesk-revit') }}" class="btn btn-small"
-                  >View Details</a
-                >
-              </div>
-            </div>
-          </div>
-
-          <div class="properties-card">
-            <div class="properties-card--thumb">
-              <img src="images/courses/sketchup.jpg" alt="sketchup" />
-            </div>
-            <div class="properties-card--content">
-              <div
-                class="d-flex align-items-center properties-card--content--address"
-              >
-                <span>SketchUp</span>
-              </div>
-              <div class="d-flex align-items-center properties-card--content--address">
-                <span>Get started with 3D modeling using the user-friendly SketchUp platform. This course is ideal for beginners or those seeking to create basic 3D models for design visualization. (Course content may include: basic modeling tools, creating shapes, applying textures,..)</span>
-            </div>
-              <div
-                class="properties-card--footer d-flex align-items-center justify-content-between"
-              >
-                <a href="{{ url('/sketchup') }}" class="btn btn-small"
-                  >View Details</a
-                >
-              </div>
-            </div>
-          </div>
-
-          <div class="properties-card">
-            <div class="properties-card--thumb">
-              <img src="images/courses/civil3d.jpg" alt="civil3d" />
-            </div>
-            <div class="properties-card--content">
-              <div
-                class="d-flex align-items-center properties-card--content--address"
-              >
-                <span>Civil 3D</span>
-              </div>
-              <div class="d-flex align-items-center properties-card--content--address">
-                <span>Specialize in civil engineering design with Civil 3D. Learn to create detailed models of roads, bridges, and other site elements, optimizing project planning and construction. (Course content may include: site modeling tools, road and drainage design, quantity takeoffs)</span>
-            </div>
-              
-              <div
-                class="properties-card--footer d-flex align-items-center justify-content-between"
-              >
-                <a href="{{ url('/civil-3d') }}" class="btn btn-small"
-                  >View Details</a
-                >
-              </div>
-            </div>
-          </div>
-
-          <div class="properties-card">
-            <div class="properties-card--thumb">
-              <img src="images/courses/archicad.png" alt="Archicad" />
-            </div>
-            <div class="properties-card--content">
-              <div
-                class="d-flex align-items-center properties-card--content--address"
-              >
-                
-                <span>Archicad</span>
-              </div>
-              <div class="d-flex align-items-center properties-card--content--address">
-                <span>Explore architectural design with Archicad, a BIM software tailored for architects. Learn to create intelligent building models, generate construction documents, and collaborate seamlessly with other professionals. (Content will focus on architectural elements)</span>
-            </div>
-              <div
-                class="properties-card--footer d-flex align-items-center justify-content-between"
-              >
-                <a href="{{ url('/archicad') }}" class="btn btn-small"
-                  >View Details</a
-                >
-              </div>
-            </div>
-          </div>
-          
-          <div class="properties-card">
-            <div class="properties-card--thumb">
-              <img src="images/courses/lumion.jpg" alt="Lumion" />
-            </div>
-            <div class="properties-card--content">
-              <div
-                class="d-flex align-items-center properties-card--content--address"
-              >
-                <span>Lumion</span>
-              </div>
-              <div class="d-flex align-items-center properties-card--content--address">
-                  <span>Create stunning and realistic visualizations of your design projects with Lumion. Learn to render high-quality images and animations that bring your ideas to life. (Course content may include: material application, lighting effects, animation techniques, rendering settings)</span>
-              </div>
-              <div
-                class="properties-card--footer d-flex align-items-center justify-content-between"
-              >
-                <a href="{{ url('/lumion') }}" class="btn btn-small"
-                  >View Details</a
-                >
-              </div>
-            </div>
-          </div>
-
-          <div class="properties-card">
-            <div class="properties-card--thumb">
-              <img src="images/courses/twinmotion.jpg" alt="Twin Motion" />
-            </div>
-            <div class="properties-card--content">
-              <div
-                class="d-flex align-items-center properties-card--content--address"
-              >
-                <span>Twinmotion</span>
-              </div>
-              <div class="d-flex align-items-center properties-card--content--address">
-                  <span>Master another leading real-time rendering software, Twinmotion. This course equips you to create immersive virtual experiences of your designs for presentations and client engagement. (Course content may be similar to Lumion with a focus on Twinmotion's functionalities)</span>
-              </div>
-              <div
-                class="properties-card--footer d-flex align-items-center justify-content-between"
-              >
-                <a href="{{ url('/twinmotion') }}" class="btn btn-small"
-                  >View Details</a
-                >
-              </div>
-            </div>
-          </div>
-
-          <div class="properties-card">
-            <div class="properties-card--thumb">
-              <img src="images/courses/prokon.png" alt="Prokon" />
-            </div>
-            <div class="properties-card--content">
-              <div
-                class="d-flex align-items-center properties-card--content--address"
-              >
-                <span>Prokon</span>
-              </div>
-              <div class="d-flex align-items-center properties-card--content--address">
-                  <span>Gain expertise in another industry-standard structural analysis software. Prokon empowers you to analyze and design various structures, including buildings, bridges, and industrial facilities. (Course content may be similar to ETABS with specific focus on Prokon's functionalities)</span>
-              </div>
-              <div
-                class="properties-card--footer d-flex align-items-center justify-content-between"
-              >
-                <a href="{{ url('/prokon') }}" class="btn btn-small"
-                  >View Details</a
-                >
-              </div>
-            </div>
-          </div>
-
-          <div class="properties-card">
-            <div class="properties-card--thumb">
-              <img src="images/courses/adobe-illustrator.jpg" alt="Adobe Illustrator" />
-            </div>
-            <div class="properties-card--content">
-              <div
-                class="d-flex align-items-center properties-card--content--address"
-              >
-                <span>Adobe Illustrator</span>
-              </div>
-              <div class="d-flex align-items-center properties-card--content--address">
-                  <span>Expand your design skills with Adobe Illustrator, a powerful vector graphics software. Learn to create logos, illustrations, and marketing materials for your projects. (Course content include: vector drawing tools, graphic design principles)</span>
-              </div>
-              <div
-                class="properties-card--footer d-flex align-items-center justify-content-between"
-              >
-                <a href="{{ url('/adobe-illustrator') }}" class="btn btn-small"
-                  >View Details</a
-                >
-              </div>
-            </div>
-          </div>
-
-          <div class="properties-card">
-            <div class="properties-card--thumb">
-              <img src="images/courses/adobe-photoshop.jpg" alt="Adobe Photoshop" />
-            </div>
-            <div class="properties-card--content">
-              <div
-                class="d-flex align-items-center properties-card--content--address"
-              >
-                <span>Adobe Photoshop</span>
-              </div>
-              <div class="d-flex align-items-center properties-card--content--address">
-                  <span>Enhance your image editing capabilities with Adobe Photoshop, the industry standard for photo manipulation and graphic design. (Course content include: image editing tools, layer management, selection techniques, filters and effects)</span>
-              </div>
-              <div
-                class="properties-card--footer d-flex align-items-center justify-content-between"
-              >
-                <a href="{{ url('/adobe-photoshop') }}" class="btn btn-small"
-                  >View Details</a
-                >
-              </div>
-            </div>
-          </div>
-
-          <div class="properties-card">
-            <div class="properties-card--thumb">
-              <img src="images/courses/tekla-structures.jpg" alt="Tekla Structures" />
-            </div>
-            <div class="properties-card--content">
-              <div
-                class="d-flex align-items-center properties-card--content--address"
-              >
-                <span>Tekla Structures</span>
-              </div>
-              <div class="d-flex align-items-center properties-card--content--address">
-                  <span>Master BIM for steel and concrete structures with Tekla Structures. Learn to create detailed models for fabrication and construction of steel and concrete buildings. (Course content focus on steel and concrete detailing)</span>
-              </div>
-              <div
-                class="properties-card--footer d-flex align-items-center justify-content-between"
-              >
-                <a href="{{ url('/tekra-structures') }}" class="btn btn-small"
-                  >View Details</a
-                >
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
     <!--For Desktops -->
     <section class="footer d-none d-xl-block">
       <div class="container-fluid footer-container">
@@ -561,6 +284,9 @@
               <h5>Other Pages</h5>
               <ul class="list-unstyled">
                 <li><a href="{{ url('/software-training') }}" class="footer-link">Software Training</a></li>
+                <li>
+                  <a href="{{ url('/register') }}" class="footer-link">Register Now</a>
+                </li>
                 <li>
                   <a href="{{ url('/privacy-policy') }}" class="footer-link">Privacy Policy</a>
                 </li>
@@ -777,6 +503,9 @@
                <ul class="list-unstyled">
                 <li><a href="{{ url('/software-training') }}" class="footer-link">Software Training</a></li>
                 <li>
+                  <a href="{{ url('/register') }}" class="footer-link">Register Now</a>
+                </li>
+                <li>
                   <a href="{{ url('/privacy-policy') }}" class="footer-link">Privacy Policy</a>
                 </li>
               </ul>
@@ -818,6 +547,9 @@
                 <h5>Other Pages</h5>
                <ul class="list-unstyled">
                 <li><a href="{{ url('/software-training') }}" class="footer-link">Software Training</a></li>
+                <li>
+                  <a href="{{ url('/register') }}" class="footer-link">Register Now</a>
+                </li>
                 <li>
                   <a href="{{ url('/privacy-policy') }}" class="footer-link">Privacy Policy</a>
                 </li>
@@ -1003,7 +735,9 @@
       </p>
     </section>
 
-    <div class="modal fade modal-createAccount" id="createAccount" aria-labelledby="createAccountLabel" aria-hidden="true">
+  
+    <!-- Modal Create Account -->
+<div class="modal fade modal-createAccount" id="createAccount" aria-labelledby="createAccountLabel">
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
             <div class="modal-header">
@@ -1020,7 +754,7 @@
                 <div class="container-fluid">
                     <div class="modal-property-details-form">
                         
-@if (session('success'))
+                    @if (session('success'))
     <div class="alert alert-success">
         {{ session('success') }}
     </div>
@@ -1072,13 +806,13 @@
         <button type="submit" class="btn btn-large d-block w-100">Book Your Slot</button>
     </div>
 </form>
-
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
+
     <script src="{{ asset('vendor/jQuery/jquery.min.js') }}"></script>
     <script src="{{ asset('vendor/bootstrap/bootstrap.bundle.min.js') }}"></script>
     <script src="{{ asset('vendor/prism/prism.js') }}"></script>

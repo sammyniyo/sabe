@@ -348,9 +348,6 @@
               <ul class="list-unstyled">
                 <li><a href="{{ url('/software-training') }}" class="footer-link">Software Training</a></li>
                 <li>
-                  <a href="{{ url('/register') }}" class="footer-link">Register Now</a>
-                </li>
-                <li>
                   <a href="{{ url('/privacy-policy') }}" class="footer-link">Privacy Policy</a>
                 </li>
               </ul>
@@ -566,9 +563,6 @@
                <ul class="list-unstyled">
                 <li><a href="{{ url('/software-training') }}" class="footer-link">Software Training</a></li>
                 <li>
-                  <a href="{{ url('/register') }}" class="footer-link">Register Now</a>
-                </li>
-                <li>
                   <a href="{{ url('/privacy-policy') }}" class="footer-link">Privacy Policy</a>
                 </li>
               </ul>
@@ -610,9 +604,6 @@
                 <h5>Other Pages</h5>
                <ul class="list-unstyled">
                 <li><a href="{{ url('/software-training') }}" class="footer-link">Software Training</a></li>
-                <li>
-                  <a href="{{ url('/register') }}" class="footer-link">Register Now</a>
-                </li>
                 <li>
                   <a href="{{ url('/privacy-policy') }}" class="footer-link">Privacy Policy</a>
                 </li>
@@ -797,10 +788,8 @@
         SABE Ltd ©<span class="newYearMobile"></span>
       </p>
     </section>
-
-  
     <!-- Modal Create Account -->
-<div class="modal fade modal-createAccount" id="createAccount" tabindex="-2" aria-labelledby="createAccountLabel" aria-hidden="true">
+    <div class="modal fade modal-createAccount" id="createAccount" aria-labelledby="createAccountLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
             <div class="modal-header">
@@ -816,8 +805,9 @@
             <div class="modal-body">
                 <div class="container-fluid">
                     <div class="modal-property-details-form">
-                      <!-- Include this in your main layout or the specific view -->
-@if (session('success'))
+                        
+                        
+                    @if (session('success'))
     <div class="alert alert-success">
         {{ session('success') }}
     </div>
@@ -839,43 +829,44 @@
     </div>
 @endif
 
-                        <form action="{{ route('students.store') }}" method="POST" class="contact-form-items row">
-                            @csrf
-
-                            <div class="col-sm-6">
-                                <div class="input-group">
-                                    <span class="input-group-text"><i class="ph-user"></i></span>
-                                    <input type="text" class="form-control" name="full_name" placeholder="Full Name" required>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="input-group">
-                                    <span class="input-group-text"><i class="ph-envelope-simple-open"></i></span>
-                                    <input type="email" class="form-control" name="email" placeholder="Email Address" required>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="input-group">
-                                    <span class="input-group-text"><i class="ph-phone"></i></span>
-                                    <input type="text" class="form-control" name="phone" placeholder="Phone Number" required>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="input-group">
-                                    <span class="input-group-text"><i class="ph-map-pin"></i></span>
-                                    <input type="text" class="form-control" name="address" placeholder="Address" required>
-                                </div>
-                            </div>
-                            <div class="w-100 contact-form-button">
-                                <button type="submit" class="btn btn-large d-block w-100">Book Your Slot</button>
-                            </div>
-                        </form>
+<form action="{{ route('students.store') }}" method="POST" class="contact-form-items row">
+    @csrf
+    <div class="col-sm-6">
+        <div class="input-group">
+            <span class="input-group-text"><i class="ph-user"></i></span>
+            <input type="text" class="form-control" name="student_full_name" placeholder="Full Name" required>
+        </div>
+    </div>
+    <div class="col-sm-6">
+        <div class="input-group">
+            <span class="input-group-text"><i class="ph-envelope-simple-open"></i></span>
+            <input type="email" class="form-control" name="student_email" placeholder="Email Address" required>
+        </div>
+    </div>
+    <div class="col-sm-6">
+        <div class="input-group">
+            <span class="input-group-text"><i class="ph-phone"></i></span>
+            <input type="text" class="form-control" name="student_phone" placeholder="Phone Number" required>
+        </div>
+    </div>
+    <div class="col-sm-6">
+        <div class="input-group">
+            <span class="input-group-text"><i class="ph-map-pin"></i></span>
+            <input type="text" class="form-control" name="student_address" placeholder="Address" required>
+        </div>
+    </div>
+    <div class="w-100 contact-form-button">
+        <button type="submit" class="btn btn-large d-block w-100">Book Your Slot</button>
+    </div>
+</form>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
+
+
 
     <script src="{{ asset('vendor/jQuery/jquery.min.js') }}"></script>
     <script src="{{ asset('vendor/bootstrap/bootstrap.bundle.min.js') }}"></script>
@@ -888,11 +879,5 @@
     <script src="{{ asset('vendor/scrollit/scrollit.min.js') }}"></script>
     <script src="{{ asset('vendor/magnific-popup/magnific-popup.min.js') }}"></script>
     <script src="{{ asset('js/script.js') }}"></script>
-    <script>
-    @if ($errors->any())
-        $(document).ready(function(){
-            $('#createAccount').modal('show');
-        });
-    @endif
-</script>
 </body>
+</html>
